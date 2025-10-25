@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shine Effect */
+.shine-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.shine-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    animation: shine 5s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -75%;
+    }
+
+    20% {
+        left: 125%;
+    }
+
+    100% {
+        left: 125%;
+    }
+}
+
+/* Glow Effect */
+.glow-on-hover {
+    position: relative;
+}
+
+.glow-on-hover::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, #22c55e, #15803d, #059669);
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+    border-radius: inherit;
+}
+
+.glow-on-hover:hover::after {
+    opacity: 0.5;
+}
+
+/* Smooth section transitions */
+section {
+    @apply transition-all duration-500;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Modern image hover effects */
+img {
+    @apply transition-all duration-300;
+}
+
+img:hover {
+    @apply brightness-105;
+}
+
+/* Smooth transitions for all interactive elements */
+input,
+textarea,
+select {
+    @apply transition-all duration-200;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hover effects */
+a,
+button {
+    @apply transition-all duration-300;
+}
+
+/* Modern hover effects for cards */
+.hover-card {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+/* Elegant hover effect for text links */
+.hover-link {
+    @apply relative inline-block;
+}
+
+.hover-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-verde-escuro transition-all duration-300;
+}
+
+.hover-link:hover::after {
+    @apply w-full;
+}
+
+/* Smooth section transitions */
+section {
+    @apply transition-all duration-500;
+}
+
+/* Modern image hover effects */
+img {
+    @apply transition-all duration-300;
+}
+
+img:hover {
+    @apply brightness-105;
+}
+
+/* Smooth transitions for all interactive elements */
+input,
+textarea,
+select {
+    @apply transition-all duration-200;
+}
