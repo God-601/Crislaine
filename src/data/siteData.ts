@@ -44,10 +44,6 @@ export const site = {
         {
             image: 'https://i.ibb.co/hJm0PBxQ/e2dbd9e4-7121-41a3-908b-315c98dbe748.jpg',
             quote: 'Aprendi a identificar o que me trava e hoje reajo de forma mais leve.',
-        },
-        {
-            image: 'https://i.ibb.co/ZpLjBZjq/image.png',
-            quote: 'Crislaine me ensinou que equilíbrio é um treino — e que posso conquistá-lo.',
         }
     ],
 

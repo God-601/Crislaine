@@ -39,26 +39,42 @@ const AboutTherapist = () => {
           variants={fadeInUp}
           transition={{ duration: 0.8 }}
         >
-          <motion.h2
-            className="text-2xl md:text-3xl font-semibold text-center text-gray-800 mb-10"
-            variants={fadeInUp}
-            transition={{ delay: 0.2 }}
-          >
-            Prazer, sou {site.about.name}
-          </motion.h2>
-
-          <div className="flex flex-col md:flex-row gap-8 mb-12">
-            <div className="md:w-1/3 flex justify-center">
-              <div className="relative">
-                <img
+          <div className="relative mb-16 overflow-hidden">
+            <div className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl shadow-lg p-8">
+              <div className="md:w-1/2">
+                <motion.img
                   src="https://i.ibb.co/B2wHmtjM/DSC7726-Crislaine-de-Carvalho.jpg"
-                  alt="Crislaine de Carvalho,  especialista em Aromaterapia e Terapia de Alta Performance"
-                  className="w-full rounded-lg shadow-md"
+                  alt="Crislaine de Carvalho, especialista em Aromaterapia e Terapia de Alta Performance"
+                  className="w-full h-[500px] object-cover rounded-lg shadow-md transform hover:scale-[1.02] transition-transform duration-300"
+                  variants={fadeInUp}
+                  transition={{ delay: 0.2 }}
                 />
-                <div className="absolute -bottom-4 -right-4 bg-emerald-500 text-white p-3 rounded-lg shadow-lg">
+                <div className="absolute bottom-6 left-6 bg-emerald-500 text-white p-3 rounded-lg shadow-lg transform rotate-[-5deg]">
                   <Leaf className="h-6 w-6" />
                 </div>
               </div>
+
+              <div className="md:w-1/2 relative">
+                <motion.div
+                  variants={fadeInUp}
+                  transition={{ delay: 0.3 }}
+                  className="text-center md:text-left"
+                >
+                  <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                    Prazer, sou {site.about.name}
+                  </h2>
+                  <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    Eu ajudo mulheres com ansiedade a conquistarem leveza, clareza e controle emocional através do Método LIVRE.
+                  </p>
+                </motion.div>
+                <div className="absolute -bottom-4 -right-4 bg-emerald-100 w-24 h-24 rounded-full opacity-50 z-0"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-8 mb-12">
+            <div className="md:w-1/3 hidden">
+              {/* Imagem removida daqui pois foi movida para cima */}
             </div>
 
             <div className="md:w-2/3">
