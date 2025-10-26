@@ -4,8 +4,25 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import ImageModal from './ImageModal';
 
+interface VideoTestimonial {
+  type: 'video';
+  videoUrl: string;
+  embedUrl: string;
+  quote: string;
+  name: string;
+}
+
+interface ImageTestimonial {
+  type: 'image';
+  image: string;
+  quote: string;
+  name: string;
+}
+
+type Testimonial = VideoTestimonial | ImageTestimonial;
+
 const Testimonials = () => {
-  const testimonials = site.testimonials;
+  const testimonials = site.testimonials as Testimonial[];
 
   const [index, setIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -63,26 +80,53 @@ const Testimonials = () => {
                           transition={{ duration: 0.5, ease: "easeInOut" }}
                           className="p-8 md:p-12"
                         >
-                          <div className="flex flex-col md:flex-row items-center gap-6">
-                            <div className="md:w-1/3 flex-shrink-0">
-                              <motion.img
-                                src={t.image}
-                                alt={`Depoimento ${i + 1}`}
-                                className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl mx-auto shadow-md cursor-pointer"
-                                whileHover={{ scale: 1.05 }}
-                                onClick={() => setSelectedImage(t.image)}
-                                transition={{ duration: 0.3 }}
-                              />
+                          {t.type === 'video' ? (
+                            <div className="flex flex-col items-center gap-6">
+                              <div className="w-full max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-md">
+                                <div className="aspect-video bg-black">
+                                  <iframe
+                                    src={`${t.embedUrl}?autoplay=0&controls=1`}
+                                    className="w-full h-full"
+                                    frameBorder="0"
+                                    allowFullScreen
+                                    allow="autoplay; fullscreen"
+                                  />
+                                </div>
+                              </div>
+
+                              <motion.div
+                                className="mt-6 text-center max-w-3xl mx-auto"
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4, delay: 0.1 }}
+                              >
+                                <p className="text-gray-800 italic text-lg md:text-xl">"{t.quote}"</p>
+                                <p className="text-verde-escuro font-medium mt-2">- {t.name}</p>
+                              </motion.div>
                             </div>
-                            <motion.div
-                              className="md:w-2/3 text-left"
-                              initial={{ opacity: 0, y: 20 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              transition={{ delay: 0.2, duration: 0.5 }}
-                            >
-                              <p className="text-gray-800 italic text-lg md:text-xl">"{t.quote}"</p>
-                            </motion.div>
-                          </div>
+                          ) : (
+                            <div className="flex flex-col md:flex-row items-center gap-6">
+                              <div className="md:w-1/3 flex-shrink-0">
+                                <motion.img
+                                  src={t.image || ''}
+                                  alt={`Depoimento de ${t.name}`}
+                                  className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl mx-auto shadow-md cursor-pointer"
+                                  whileHover={{ scale: 1.05 }}
+                                  onClick={() => t.image && setSelectedImage(t.image)}
+                                  transition={{ duration: 0.3 }}
+                                />
+                              </div>
+                              <motion.div
+                                className="md:w-2/3 text-left"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.2, duration: 0.5 }}
+                              >
+                                <p className="text-gray-800 italic text-lg md:text-xl mb-4">"{t.quote}"</p>
+                                <p className="text-verde-escuro font-medium">- {t.name}</p>
+                              </motion.div>
+                            </div>
+                          )}
                         </motion.div>
                       )
                     ))}
@@ -120,8 +164,8 @@ const Testimonials = () => {
                       whileTap={{ scale: 0.8 }}
                       aria-label={`Ir para depoimento ${i + 1}`}
                       className={`w-3 h-3 rounded-full transition-colors duration-300 ${i === index
-                          ? 'bg-verde-escuro scale-125'
-                          : 'bg-verde-escuro/30 hover:bg-verde-escuro/50'
+                        ? 'bg-verde-escuro scale-125'
+                        : 'bg-verde-escuro/30 hover:bg-verde-escuro/50'
                         }`}
                     />
                   ))}

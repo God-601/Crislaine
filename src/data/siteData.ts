@@ -38,13 +38,20 @@ export const site = {
 
     testimonials: [
         {
-            image: 'https://i.ibb.co/Nd3rMXyL/depoimento-1-Crislaine-de-Carvalho.png',
-            quote: 'Depois do Método LIVRE, a ansiedade não me domina mais. Me sinto mais calma e segura.',
+            type: 'image',
+            image: 'https://i.ibb.co/hJm0PBxQ/e2dbd9e4-7121-41a3-908b-315c98dbe748.jpg',
+            quote: 'O método me ajudou a encontrar equilíbrio e paz interior.',
         },
         {
-            image: 'https://i.ibb.co/hJm0PBxQ/e2dbd9e4-7121-41a3-908b-315c98dbe748.jpg',
+            type: 'video',
+            videoUrl: 'https://streamable.com/rwyrou',
+            embedUrl: 'https://streamable.com/e/rwyrou',
+        },
+        {
+            type: 'image',
+            image: 'https://i.ibb.co/Nd3rMXyL/depoimento-1-Crislaine-de-Carvalho.png',
             quote: 'Aprendi a identificar o que me trava e hoje reajo de forma mais leve.',
-        }
+        },
     ],
 
     contact: {
