@@ -24,7 +24,7 @@ const Header = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <Sprout className="h-8 w-8 text-verde-escuro" />
-          <span className="ml-2 text-lg font-medium text-verde-escuro">Crislaine Carvalho</span>
+          <span className="ml-2 text-lg font-medium text-verde-escuro">Crislaine de Carvalho</span>
         </div>
         <nav className="hidden md:flex space-x-6">
           {site.header.nav.map((item) => (

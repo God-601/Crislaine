@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0 text-center md:text-left">
-              <h3 className="text-xl font-medium mb-2">Crislaine Carvalho - Terapeuta Integrativa</h3>
+              <h3 className="text-xl font-medium mb-2">Crislaine de Carvalho - Terapeuta Integrativa</h3>
               <p className="text-amber-100 text-sm">
                 Terapia de Alta Performance + Aromaterapia para mulheres com ansiedade.
               </p>
@@ -54,7 +54,7 @@ const Footer = () => {
 
           <div className="border-t border-white/20 mt-8 pt-8 text-center">
             <p className="text-white text-sm">
-              &copy; {new Date().getFullYear()} Crislaine Carvalho - Criadora do Método LIVRE
+              &copy; {new Date().getFullYear()} Crislaine de Carvalho - Criadora do Método LIVRE
             </p>
           </div>
         </div>

@@ -63,7 +63,7 @@ export const site = {
     },
 
     footer: {
-        name: 'Crislaine Carvalho — Terapeuta Integrativa',
+        name: 'Crislaine de Carvalho — Terapeuta Integrativa',
         subtitle: 'Terapia de Alta Performance + Aromaterapia para mulheres com ansiedade.',
         location: 'Atendimento 100% online'
     },
@@ -78,7 +78,7 @@ export const site = {
     },
 
     about: {
-        name: 'Crislaine Carvalho',
+        name: 'Crislaine de Carvalho',
         bioShort: 'Hoje, minha missão é ajudar mulheres a superarem a ansiedade e encontrarem equilíbrio emocional através de uma abordagem integrativa, que une o melhor da Aromaterapia com a Terapia de Alta Performance.'
     }
 };
