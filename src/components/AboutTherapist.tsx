@@ -30,72 +30,45 @@ const AboutTherapist = () => {
   };
 
   return (
-    <section id="sobre" className="py-16 bg-amber-50 overflow-hidden" ref={ref}>
+    <section id="sobre" className="py-24 bg-amber-50 overflow-hidden relative" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
-          className="max-w-4xl mx-auto"
+          className="max-w-6xl mx-auto"
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={fadeInUp}
           transition={{ duration: 0.8 }}
         >
-          <div className="relative mb-16 overflow-hidden">
-            <div className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl shadow-lg p-8">
-              <div className="md:w-1/2">
-                <motion.img
-                  src="https://i.ibb.co/B2wHmtjM/DSC7726-Crislaine-de-Carvalho.jpg"
-                  alt="Crislaine de Carvalho, especialista em Aromaterapia e Terapia de Alta Performance"
-                  className="w-full h-[500px] object-cover rounded-lg shadow-md transform hover:scale-[1.02] transition-transform duration-300"
-                  variants={fadeInUp}
-                  transition={{ delay: 0.2 }}
-                />
-                <div className="absolute bottom-6 left-6 bg-emerald-500 text-white p-3 rounded-lg shadow-lg transform rotate-[-5deg]">
-                  <Leaf className="h-6 w-6" />
-                </div>
-              </div>
+          <motion.h2
+            className="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-16"
+            variants={fadeInUp}
+            transition={{ delay: 0.2 }}
+          >
+            Prazer, sou <span className="text-emerald-600">{site.about.name}</span>
+          </motion.h2>
 
-              <div className="md:w-1/2 relative">
-                <motion.div
-                  variants={fadeInUp}
-                  transition={{ delay: 0.3 }}
-                  className="text-center md:text-left"
-                >
-                  <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
-                    Prazer, sou {site.about.name}
-                  </h2>
-                  <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                    Eu ajudo mulheres com ansiedade a conquistarem leveza, clareza e controle emocional através do Método LIVRE.
-                  </p>
-                </motion.div>
-                <div className="absolute -bottom-4 -right-4 bg-emerald-100 w-24 h-24 rounded-full opacity-50 z-0"></div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col md:flex-row gap-8 mb-12">
-            <div className="md:w-1/3 hidden">
-              {/* Imagem removida daqui pois foi movida para cima */}
-            </div>
-
-            <div className="md:w-2/3">
+          <div className="relative mb-16">
+            <motion.div
+              className="max-w-3xl mx-auto"
+              variants={fadeInUp}
+              transition={{ delay: 0.4 }}
+            >
               <div className="prose prose-lg">
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-700 mb-6 text-lg leading-relaxed">
                   Minha jornada como terapeuta começou a partir da minha própria vivência com ansiedade. Durante 10 anos, dependia de medicamentos para controlar meus sintomas. Após perder minha mãe, enfrentei um dos momentos mais desafiadores da minha vida.
                 </p>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-700 mb-6 text-lg leading-relaxed">
                   Foi em 2019 que encontrei na Aromaterapia o alívio que não havia obtido com medicações. Após usar óleo essencial de Bergamota, experimentei uma melhora significativa em apenas 15 dias, algo que transformou minha percepção sobre bem-estar emocional.
                 </p>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-700 mb-6 text-lg leading-relaxed">
                   Comecei a aplicar os conhecimentos em mim mesma, na minha família e em outras mulheres que enfrentavam desafios semelhantes. Em 2021, iniciei atendimentos formais e, em 2024, me formei na Terapia de Alta Performance (TAP), integrando técnicas de PNL e Neurociência do Comportamento ao meu trabalho.
                 </p>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-lg leading-relaxed">
                   {site.about.bioShort}
                 </p>
               </div>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            </motion.div>
+          </div>          <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-xl font-medium text-gray-800 mb-4">Meus diferenciais</h3>
               <ul className="space-y-3">
