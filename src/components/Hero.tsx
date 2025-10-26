@@ -42,7 +42,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Agendar minha sessão de identificação
+              Agendar minha sessão gratuita
               <ArrowRight className="ml-2 h-5 w-5" />
             </motion.a>
           </motion.div>
@@ -58,7 +58,7 @@ const Hero = () => {
               <img
                 src="https://i.ibb.co/B2wHmtjM/DSC7726-Crislaine-de-Carvalho.jpg"
                 alt="Crislaine de Carvalho - Terapeuta Integrativa"
-                className="relative z-10 w-full h-[600px] object-cover rounded-2xl shadow-xl"
+                className="relative z-10 w-full h-[500px] object-cover object-[center_25%] rounded-2xl shadow-xl"
               />
               <div className="absolute -bottom-4 -right-4 bg-verde-escuro text-white p-4 rounded-2xl shadow-lg z-20">
                 <span className="font-medium">Atendimento 100% Online</span>

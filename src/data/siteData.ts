@@ -33,7 +33,7 @@ export const site = {
             'Reprogramar sua mente para o equilíbrio emocional.',
             'Viver com mais leveza, clareza e energia.'
         ],
-        ctaText: 'Quero agendar minha sessão de identificação'
+        ctaText: 'Quero agendar minha sessão gratuita'
     },
 
     testimonials: [

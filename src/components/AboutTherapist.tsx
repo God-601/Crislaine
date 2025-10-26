@@ -48,26 +48,48 @@ const AboutTherapist = () => {
           </motion.h2>
 
           <div className="relative mb-16">
-            <motion.div
-              className="max-w-3xl mx-auto"
-              variants={fadeInUp}
-              transition={{ delay: 0.4 }}
-            >
-              <div className="prose prose-lg">
-                <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-                  Minha jornada como terapeuta começou a partir da minha própria vivência com ansiedade. Durante 10 anos, dependia de medicamentos para controlar meus sintomas. Após perder minha mãe, enfrentei um dos momentos mais desafiadores da minha vida.
-                </p>
-                <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-                  Foi em 2019 que encontrei na Aromaterapia o alívio que não havia obtido com medicações. Após usar óleo essencial de Bergamota, experimentei uma melhora significativa em apenas 15 dias, algo que transformou minha percepção sobre bem-estar emocional.
-                </p>
-                <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-                  Comecei a aplicar os conhecimentos em mim mesma, na minha família e em outras mulheres que enfrentavam desafios semelhantes. Em 2021, iniciei atendimentos formais e, em 2024, me formei na Terapia de Alta Performance (TAP), integrando técnicas de PNL e Neurociência do Comportamento ao meu trabalho.
-                </p>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  {site.about.bioShort}
-                </p>
-              </div>
-            </motion.div>
+            <div className="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
+              <motion.div
+                className="order-2 md:order-1"
+                variants={fadeInUp}
+                transition={{ delay: 0.4 }}
+              >
+                <div className="prose prose-lg">
+                  <p className="text-gray-700 mb-6 text-lg leading-relaxed">
+                    Minha jornada como terapeuta começou a partir da minha própria vivência com ansiedade. Durante 10 anos, dependia de medicamentos para controlar meus sintomas. Após perder minha mãe, enfrentei um dos momentos mais desafiadores da minha vida.
+                  </p>
+                  <p className="text-gray-700 mb-6 text-lg leading-relaxed">
+                    Foi em 2019 que encontrei na Aromaterapia o alívio que não havia obtido com medicações. Após usar óleo essencial de Bergamota, experimentei uma melhora significativa em apenas 15 dias, algo que transformou minha percepção sobre bem-estar emocional.
+                  </p>
+                  <p className="text-gray-700 mb-6 text-lg leading-relaxed">
+                    Comecei a aplicar os conhecimentos em mim mesma, na minha família e em outras mulheres que enfrentavam desafios semelhantes. Em 2021, iniciei atendimentos formais e, em 2024, me formei na Terapia de Alta Performance (TAP), integrando técnicas de PNL e Neurociência do Comportamento ao meu trabalho.
+                  </p>
+                  <p className="text-gray-700 text-lg leading-relaxed">
+                    {site.about.bioShort}
+                  </p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="order-1 md:order-2 md:sticky md:top-24"
+                variants={fadeInUp}
+                transition={{ delay: 0.3 }}
+              >
+                <div className="relative">
+                  <div className="absolute -inset-4 bg-gradient-to-br from-emerald-50 to-amber-50/50 rounded-2xl transform -rotate-2"></div>
+                  <div className="relative">
+                    <img
+                      src="https://i.ibb.co/B2wHmtjM/DSC7726-Crislaine-de-Carvalho.jpg"
+                      alt="Crislaine de Carvalho - Especialista em Terapia de Alta Performance e Aromaterapia"
+                      className="w-full aspect-[3/4] object-cover object-[center_15%] rounded-2xl shadow-xl"
+                    />
+                    <div className="absolute -bottom-3 -right-3 bg-emerald-500 text-white p-3 rounded-xl shadow-lg">
+                      <Leaf className="h-6 w-6" />
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
           </div>          <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-xl font-medium text-gray-800 mb-4">Meus diferenciais</h3>
