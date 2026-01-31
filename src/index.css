@@ -112,23 +112,4 @@ button {
     @apply w-full;
 }
 
-/* Smooth section transitions */
-section {
-    @apply transition-all duration-500;
-}
-
-/* Modern image hover effects */
-img {
-    @apply transition-all duration-300;
-}
-
-img:hover {
-    @apply brightness-105;
-}
-
-/* Smooth transitions for all interactive elements */
-input,
-textarea,
-select {
-    @apply transition-all duration-200;
-}
+/* Utilities already defined above; duplicates removed */

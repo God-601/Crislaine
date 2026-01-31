@@ -17,6 +17,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import ParallaxBackground from './components/ParallaxBackground';
 import NavigationButtons from './components/NavigationButtons';
+import CookieConsent from './components/CookieConsent';
 
 function App() {
   useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
   return (
     <div className="min-h-screen bg-white relative">
       <ParallaxBackground />
+      <CookieConsent />
       <NavigationButtons />
       <Header />
       <main>
