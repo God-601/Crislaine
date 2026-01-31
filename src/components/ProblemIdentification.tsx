@@ -9,7 +9,7 @@ const ProblemIdentification = () => {
             {site.identification.title}
           </h2>
           {site.identification.paragraphs.map((p, i) => (
-            <p key={i} className="text-gray-700 mb-4 max-w-2xl mx-auto">
+            <p key={i} className="text-gray-800 mb-4 max-w-2xl mx-auto font-normal leading-relaxed">
               {p}
             </p>
           ))}

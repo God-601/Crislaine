@@ -3,6 +3,7 @@ import { Award, Leaf, Brain, Star } from 'lucide-react';
 import { site } from '../data/siteData';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Button from './Button';
 
 const AboutTherapist = () => {
   const [ref, inView] = useInView({
@@ -55,16 +56,16 @@ const AboutTherapist = () => {
                 transition={{ delay: 0.4 }}
               >
                 <div className="prose prose-lg">
-                  <p className="text-gray-700 mb-6 text-lg leading-relaxed">
+                  <p className="text-gray-800 mb-6 text-lg leading-relaxed font-medium">
                     Minha jornada como terapeuta começou a partir da minha própria vivência com ansiedade. Durante 10 anos, dependia de medicamentos para controlar meus sintomas. Após perder minha mãe, enfrentei um dos momentos mais desafiadores da minha vida.
                   </p>
-                  <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-                    Foi em 2019 que encontrei na Aromaterapia o alívio que não havia obtido com medicações. Após usar óleo essencial de Bergamota, experimentei uma melhora significativa em apenas 15 dias, algo que transformou minha percepção sobre bem-estar emocional.
+                  <p className="text-gray-700 mb-6 text-base leading-relaxed">
+                    Foi em 2019 que encontrei na Aromaterapia o alívio que não havia obtido com medicações. Após usar óleo essencial de Bergamota, <span className="font-semibold text-gray-800">experimentei uma melhora significativa em apenas 15 dias</span>, algo que transformou minha percepção sobre bem-estar emocional.
                   </p>
-                  <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-                    Comecei a aplicar os conhecimentos em mim mesma, na minha família e em outras mulheres que enfrentavam desafios semelhantes. Em 2021, iniciei atendimentos formais e, em 2024, me formei na Terapia de Alta Performance (TAP), integrando técnicas de PNL e Neurociência do Comportamento ao meu trabalho.
+                  <p className="text-gray-700 mb-6 text-base leading-relaxed">
+                    Comecei a aplicar os conhecimentos em mim mesma, na minha família e em outras mulheres que enfrentavam desafios semelhantes. <span className="font-semibold text-gray-800">Em 2021, iniciei atendimentos formais e, em 2024, me formei na Terapia de Alta Performance (TAP)</span>, integrando técnicas de PNL e Neurociência do Comportamento ao meu trabalho.
                   </p>
-                  <p className="text-gray-700 text-lg leading-relaxed">
+                  <p className="text-gray-700 text-base leading-relaxed">
                     {site.about.bioShort}
                   </p>
                 </div>
@@ -96,10 +97,12 @@ const AboutTherapist = () => {
               <ul className="space-y-3">
                 {differentials.map((item, index) => (
                   <li key={index} className="flex items-start">
-                    <div className="bg-emerald-100 p-1.5 rounded-full mr-3 mt-0.5">
-                      <div className="bg-emerald-500 rounded-full w-2 h-2"></div>
+                    <div className="text-emerald-600 mr-3 mt-0.5 flex-shrink-0">
+                      <svg className="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="2">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
                     </div>
-                    <span className="text-gray-700">{item}</span>
+                    <span className="text-gray-800 font-normal">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -110,23 +113,23 @@ const AboutTherapist = () => {
               <ul className="space-y-4">
                 {credentials.map((item, index) => (
                   <li key={index} className="flex items-center">
-                    <div className="text-emerald-600 mr-3">
-                      {item.icon}
+                    <div className="text-emerald-600 mr-3 flex-shrink-0">
+                      <svg className="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="2">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
                     </div>
-                    <span className="text-gray-700">{item.text}</span>
+                    <span className="text-gray-800">{item.text}</span>
                   </li>
                 ))}
               </ul>
 
               <div className="mt-8">
-                <a
+                <Button
+                  text="Converse comigo"
                   href="https://wa.me/5579999663270?text=Quero%20saber%20mais%20sobre%20sua%20terapia!"
-                  className="inline-flex items-center px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-md shadow-sm transition-all"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Converse comigo
-                </a>
+                  variant="primary"
+                  showArrow={false}
+                />
               </div>
             </div>
           </div>

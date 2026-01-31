@@ -41,7 +41,7 @@ const Approach = () => {
                   {item.icon}
                 </div>
                 <h3 className="font-medium text-lg text-gray-800 mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="text-gray-700 font-normal leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -51,10 +51,10 @@ const Approach = () => {
               <h3 className="text-xl font-medium text-gray-800 mb-4">
                 Uma abordagem centrada em você
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-700 font-normal leading-relaxed mb-4">
                 Cada pessoa é única, e sua jornada de transformação também deve ser. Por isso, ao invés de seguir protocolos rígidos, desenvolvo um plano personalizado que considera suas necessidades específicas, história pessoal e objetivos.
               </p>
-              <p className="text-gray-600">
+              <p className="text-gray-700 font-normal leading-relaxed">
                 A integração entre Aromaterapia e técnicas avançadas de Neurociência permite acessar tanto o sistema límbico (responsável pelas emoções) quanto o córtex pré-frontal (responsável pelas decisões), criando uma transformação completa e duradoura.
               </p>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sparkles } from 'lucide-react';
+import Button from './Button';
 
 const Benefits = () => {
   const benefits = [
@@ -46,20 +47,17 @@ const Benefits = () => {
                   <Sparkles className="h-5 w-5 text-emerald-500 mr-2" />
                   <h3 className="font-medium text-lg text-gray-800">{benefit.title}</h3>
                 </div>
-                <p className="text-gray-600 pl-7">{benefit.description}</p>
+                <p className="text-gray-700 pl-7 font-normal leading-relaxed">{benefit.description}</p>
               </div>
             ))}
           </div>
 
           <div className="mt-12 text-center">
-            <a
+            <Button
+              text="Quero mais equilíbrio na minha vida"
               href="https://wa.me/5579999663270?text=Quero%20saber%20mais%20sobre%20sua%20terapia!"
-              className="inline-flex items-center px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-md shadow-md transition-all"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Quero mais equilíbrio na minha vida
-            </a>
+              variant="primary"
+            />
           </div>
         </div>
       </div>

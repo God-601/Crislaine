@@ -1,4 +1,5 @@
 import { site, whatsappLink } from '../data/siteData';
+import Button from './Button';
 
 const ContactSection = () => {
   return (
@@ -8,22 +9,19 @@ const ContactSection = () => {
           <h2 className="text-2xl md:text-3xl font-semibold text-verde-escuro mb-4">
             Você não precisa enfrentar tudo sozinha.
           </h2>
-          <p className="text-preto-suave mb-8 max-w-2xl mx-auto">
+          <p className="text-gray-700 mb-8 max-w-2xl mx-auto font-normal leading-relaxed">
             A ansiedade não precisa mais controlar seus dias. Com o Método LIVRE, você aprende a transformar o que sente em clareza, autodomínio e leveza.
           </p>
 
-          <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
+          <p className="text-gray-700 mb-8 max-w-2xl mx-auto font-normal leading-relaxed">
             É um processo de libertação interna - e o primeiro passo é simples: agendar sua sessão de identificação gratuita.
           </p>
 
-          <a
+          <Button
+            text={site.contact.ctaText}
             href={whatsappLink(site.contact.waMessage, site.contact.waNumber)}
-            className="inline-flex items-center px-8 py-4 bg-verde-escuro hover:opacity-95 text-white font-medium rounded-2xl shadow-md transition-all"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {site.contact.ctaText}
-          </a>
+            variant="primary"
+          />
         </div>
       </div>
     </section>

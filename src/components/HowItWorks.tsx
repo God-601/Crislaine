@@ -1,6 +1,7 @@
 import { site, whatsappLink } from '../data/siteData';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Button from './Button';
 
 const HowItWorks = () => {
   const [ref, inView] = useInView({
@@ -39,7 +40,7 @@ const HowItWorks = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <div className="text-verde-escuro mr-3 text-2xl opacity-75">•</div>
-                <p className="text-gray-700 font-light">{item}</p>
+                <p className="text-gray-800 font-normal">{item}</p>
               </motion.div>
             ))}
           </div>
@@ -50,16 +51,11 @@ const HowItWorks = () => {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <motion.a
+            <Button
+              text={site.process.ctaText}
               href={waLink}
-              className="inline-flex items-center px-6 py-3 bg-verde-escuro text-white font-medium rounded-2xl shadow-md transition-all"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05, backgroundColor: '#0c4a3e' }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {site.process.ctaText}
-            </motion.a>
+              variant="primary"
+            />
           </motion.div>
         </motion.div>
       </div>
