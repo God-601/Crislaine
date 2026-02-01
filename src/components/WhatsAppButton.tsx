@@ -13,7 +13,7 @@ const WhatsAppButton = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const waLink = whatsappLink(site.contact.waMessage, site.contact.waNumber);
+  const waLink = whatsappLink(site.hero.waMessage, site.hero.waNumber);
 
   return (
     <motion.a

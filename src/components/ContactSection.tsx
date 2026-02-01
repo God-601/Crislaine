@@ -25,27 +25,16 @@ const ContactSection = () => {
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Você não precisa enfrentar tudo sozinha.
+            {site.contact.finalTitle}
           </motion.h2>
-          <div className="space-y-6 mb-12 md:mb-16">
-            <motion.p
-              className="text-xl md:text-2xl text-gray-600 leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            >
-              A ansiedade não precisa mais controlar seus dias. Com o Método LIVRE, você aprende a transformar o que sente em clareza, autodomínio e leveza.
-            </motion.p>
-
-            <motion.p
-              className="text-xl md:text-2xl text-gray-600 leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            >
-              É um processo de libertação interna - e o primeiro passo é simples: agendar sua sessão de identificação gratuita.
-            </motion.p>
-          </div>
+          <motion.p
+            className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-12 md:mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+          >
+            {site.contact.finalText}
+          </motion.p>
 
           <motion.div
             className="flex justify-center"

@@ -5,6 +5,11 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 import ImageModal from './ImageModal';
 
+interface TextTestimonial {
+  type: 'text';
+  quote: string;
+}
+
 interface VideoTestimonial {
   type: 'video';
   videoUrl: string;
@@ -20,7 +25,7 @@ interface ImageTestimonial {
   name: string;
 }
 
-type Testimonial = VideoTestimonial | ImageTestimonial;
+type Testimonial = TextTestimonial | VideoTestimonial | ImageTestimonial;
 
 const Testimonials = () => {
   const [ref, inView] = useInView({
@@ -76,7 +81,7 @@ const Testimonials = () => {
               animate={inView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Transformações que inspiram
+              O que algumas mulheres relatam após o processo
             </motion.h2>
 
             <div className="relative">
@@ -92,7 +97,18 @@ const Testimonials = () => {
                         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                         className="p-8 md:p-12 lg:p-16"
                       >
-                        {t.type === 'video' ? (
+                        {t.type === 'text' ? (
+                          <div className="text-center max-w-3xl mx-auto">
+                            <motion.p
+                              className="text-xl md:text-2xl text-gray-700 italic leading-relaxed"
+                              initial={{ opacity: 0, y: 10 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.5, delay: 0.2 }}
+                            >
+                              "{t.quote}"
+                            </motion.p>
+                          </div>
+                        ) : t.type === 'video' ? (
                           <div className="flex flex-col items-center gap-8">
                             <div className="w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg">
                               <div className="aspect-video bg-black">

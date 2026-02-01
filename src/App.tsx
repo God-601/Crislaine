@@ -1,13 +1,12 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ProblemIdentification from './components/ProblemIdentification';
-import Benefits from './components/Benefits';
-import Approach from './components/Approach';
+import Method from './components/Method';
+import HowItWorks from './components/HowItWorks';
+import AfterTest from './components/AfterTest';
+import ForWho from './components/ForWho';
 import Testimonials from './components/Testimonials';
 import AboutTherapist from './components/AboutTherapist';
-import HowItWorks from './components/HowItWorks';
-import Method from './components/Method';
-import FAQ from './components/FAQ';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -23,11 +22,10 @@ function App() {
         <ProblemIdentification />
         <Method />
         <HowItWorks />
-        <Benefits />
-        <Approach />
+        <AfterTest />
+        <ForWho />
         <Testimonials />
         <AboutTherapist />
-        <FAQ />
         <ContactSection />
       </main>
       <Footer />

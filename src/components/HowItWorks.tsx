@@ -12,7 +12,7 @@ const HowItWorks = () => {
   const items = site.process.items;
 
   return (
-    <section className="py-section bg-white overflow-hidden" ref={ref}>
+    <section id="como-funciona" className="py-section bg-white overflow-hidden" ref={ref}>
       <div className="container-custom">
         <motion.div
           className="max-w-6xl mx-auto"
