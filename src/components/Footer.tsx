@@ -3,29 +3,29 @@ import { site, whatsappLink } from '../data/siteData';
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-16 md:py-20 text-white">
+    <footer className="bg-black py-12 sm:py-16 md:py-20 text-white">
       <div className="container-custom">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-12 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-10 md:mb-12">
             <div>
-              <h3 className="text-xl font-display font-semibold mb-4">Crislaine de Carvalho</h3>
-              <p className="text-gray-400 text-sm mb-2">
+              <h3 className="text-lg sm:text-xl font-display font-semibold mb-4">Crislaine de Carvalho</h3>
+              <p className="text-gray-400 text-xs sm:text-sm mb-2">
                 Terapeuta Integrativa
               </p>
-              <p className="text-gray-400 text-sm">Terapia de Alta Performance Mental• Ansiedade • Aromaterapia</p>
-              <p className="text-gray-400 text-sm">Pós-graduanda em Neurociência e Práticas Terapêuticas</p>
+              <p className="text-gray-400 text-xs sm:text-sm">Terapia de Alta Performance Mental• Ansiedade • Aromaterapia</p>
+              <p className="text-gray-400 text-xs sm:text-sm">Pós-graduanda em Neurociência e Práticas Terapêuticas</p>
             </div>
 
             <div>
-              <h4 className="text-sm font-semibold mb-4 text-gray-300 uppercase tracking-wide">Contato</h4>
-              <div className="space-y-2 text-sm text-gray-400">
+              <h4 className="text-xs sm:text-sm font-semibold mb-4 text-gray-300 uppercase tracking-wide">Contato</h4>
+              <div className="space-y-2 text-xs sm:text-sm text-gray-400">
                 <p>WhatsApp: {site.contact.phone}</p>
                 <p>Email: {site.contact.email}</p>
               </div>
             </div>
 
             <div>
-              <h4 className="text-sm font-semibold mb-4 text-gray-300 uppercase tracking-wide">Redes Sociais</h4>
+              <h4 className="text-xs sm:text-sm font-semibold mb-4 text-gray-300 uppercase tracking-wide">Redes Sociais</h4>
               <div className="flex gap-4">
                 <a
                   href={site.contact.instagram}
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-xs sm:text-sm">
               &copy; {new Date().getFullYear()} Crislaine de Carvalho - Criadora do Método LIVRE
             </p>
           </div>

@@ -7,13 +7,13 @@ const Hero = () => {
 
   return (
 
-    <section className="min-h-screen flex items-center justify-center bg-white pt-6 sm:pt-8 md:pt-12 pb-10 sm:pb-16 md:pb-20 overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center bg-white pt-8 sm:pt-12 pb-12 sm:pb-20 overflow-hidden">
       <div className="container-custom">
         <div className="max-w-7xl mx-auto">
           {/* Text Content */}
-          <div className="text-center mb-6 sm:mb-10 md:mb-16">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <motion.h1
-              className="font-display text-hero text-black mb-4 sm:mb-6 md:mb-8 lg:mb-12 max-w-5xl mx-auto px-2"
+              className="font-display text-hero text-black mb-6 sm:mb-8 md:mb-12 max-w-5xl mx-auto px-2"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -22,7 +22,7 @@ const Hero = () => {
             </motion.h1>
 
             <motion.p
-              className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 md:mb-12 lg:mb-16 max-w-2xl mx-auto leading-relaxed px-3 sm:px-4"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-8 sm:mb-12 md:mb-16 max-w-2xl mx-auto leading-relaxed px-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
@@ -49,12 +49,12 @@ const Hero = () => {
 
           {/* Image */}
           <motion.div
-            className="max-w-4xl mx-auto px-3 sm:px-4"
+            className="max-w-4xl mx-auto px-2 sm:px-4"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="relative aspect-[3/4] sm:aspect-[4/3] md:aspect-[16/10] overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl">
+            <div className="relative aspect-[4/3] md:aspect-[16/10] overflow-hidden rounded-lg sm:rounded-2xl md:rounded-3xl">
               <img
                 src="https://i.ibb.co/B2wHmtjM/DSC7726-Crislaine-de-Carvalho.jpg"
                 alt="Crislaine de Carvalho"

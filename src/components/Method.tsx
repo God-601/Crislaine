@@ -18,21 +18,21 @@ const Method = () => {
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 >
-                    <h2 className="font-display text-display text-black text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 px-3 sm:px-4">
+                    <h2 className="font-display text-display text-black text-center mb-8 sm:mb-12 md:mb-16 px-4">
                         {site.method.title}
                     </h2>
-                    <div className="space-y-5 sm:space-y-6 md:space-y-8 lg:space-y-10 px-3 sm:px-4">
+                    <div className="space-y-6 sm:space-y-8 md:space-y-10 px-4">
                         {site.method.paragraphs.map((p, i) => {
                             if (p.includes('⚠️')) {
                                 return (
                                     <motion.div
                                         key={i}
-                                        className="bg-gray-100 p-4 sm:p-5 md:p-6 lg:p-8 rounded-xl sm:rounded-2xl border-l-4 border-gray-400"
+                                        className="bg-gray-100 p-6 md:p-8 rounded-2xl border-l-4 border-gray-400"
                                         initial={{ opacity: 0, y: 20 }}
                                         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                                         transition={{ duration: 0.8, delay: 0.2 + i * 0.1, ease: [0.16, 1, 0.3, 1] }}
                                     >
-                                        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">{p}</p>
+                                        <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">{p}</p>
                                     </motion.div>
                                 );
                             }
@@ -50,11 +50,11 @@ const Method = () => {
                                         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                                         transition={{ duration: 0.8, delay: 0.2 + i * 0.1, ease: [0.16, 1, 0.3, 1] }}
                                     >
-                                        <ul className="space-y-2 sm:space-y-3 md:space-y-4 list-none">
+                                        <ul className="space-y-4 list-none">
                                             {items.map((item, idx) => (
-                                                <li key={idx} className="flex items-start gap-2 sm:gap-3">
+                                                <li key={idx} className="flex items-start gap-3">
                                                     <span className="text-black mt-1 flex-shrink-0">•</span>
-                                                    <span className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed">{item.trim()}</span>
+                                                    <span className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">{item.trim()}</span>
                                                 </li>
                                             ))}
                                         </ul>
@@ -64,7 +64,7 @@ const Method = () => {
                             return (
                                 <motion.p
                                     key={i}
-                                    className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed"
+                                    className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                                     transition={{ duration: 0.8, delay: 0.2 + i * 0.1, ease: [0.16, 1, 0.3, 1] }}

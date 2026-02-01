@@ -20,7 +20,7 @@ const AfterTest = () => {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.h2
-            className="font-display text-display text-black text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 px-3 sm:px-4"
+            className="font-display text-display text-black text-center mb-8 sm:mb-12 md:mb-16 px-4"
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -28,9 +28,9 @@ const AfterTest = () => {
             {site.afterTest.title}
           </motion.h2>
 
-          <div className="space-y-5 sm:space-y-6 md:space-y-8 px-3 sm:px-4">
+          <div className="space-y-6 sm:space-y-8 px-4">
             <motion.p
-              className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed text-center font-medium"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed text-center font-medium"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -44,12 +44,12 @@ const AfterTest = () => {
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
             >
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-3 sm:mb-4 text-center">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-4 text-center">
                 Ao final, você sai entendendo:
               </p>
-              <ul className="space-y-2 sm:space-y-3 text-left">
+              <ul className="space-y-3 text-left">
                 {site.afterTest.items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base md:text-lg text-gray-700">
+                  <li key={i} className="flex items-start gap-3 text-base sm:text-lg md:text-xl text-gray-700">
                     <span className="text-black mt-1 flex-shrink-0">•</span>
                     <span>{item}</span>
                   </li>
@@ -57,11 +57,11 @@ const AfterTest = () => {
               </ul>
             </motion.div>
 
-            <div className="space-y-4 sm:space-y-5 md:space-y-6">
+            <div className="space-y-5 sm:space-y-6">
               {site.afterTest.paragraphs.map((p, i) => (
                 <motion.p
                   key={i}
-                  className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed text-center"
+                  className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed text-center"
                   initial={{ opacity: 0, y: 20 }}
                   animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.8, delay: 0.5 + i * 0.1, ease: [0.16, 1, 0.3, 1] }}

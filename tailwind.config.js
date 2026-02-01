@@ -32,9 +32,9 @@ export default {
         'body': ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Text', 'Helvetica Neue', 'sans-serif'],
       },
       fontSize: {
-        'hero': ['clamp(1.5rem, 5vw, 4rem)', { lineHeight: '1.15', letterSpacing: '-0.02em' }],
-        'display': ['clamp(1.5rem, 4vw, 3rem)', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
-        'title': ['clamp(1.25rem, 3vw, 2rem)', { lineHeight: '1.3', letterSpacing: '-0.01em' }],
+        'hero': ['clamp(2rem, 6vw, 4.5rem)', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+        'display': ['clamp(1.75rem, 5vw, 3.5rem)', { lineHeight: '1.15', letterSpacing: '-0.01em' }],
+        'title': ['clamp(1.5rem, 3.5vw, 2.25rem)', { lineHeight: '1.25', letterSpacing: '-0.01em' }],
       },
       spacing: {
         'section': 'clamp(4rem, 12vw, 8rem)',

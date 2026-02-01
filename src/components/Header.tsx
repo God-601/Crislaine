@@ -18,11 +18,10 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
           ? 'glass shadow-sm'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="container-custom">
         <div className="flex justify-between items-center py-4 md:py-5">
@@ -63,7 +62,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-black p-2 -mr-2"
+            className="md:hidden text-black p-2 -mr-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Menu"
           >
@@ -81,12 +80,12 @@ const Header = () => {
               transition={{ duration: 0.3 }}
               className="md:hidden overflow-hidden border-t border-gray-200"
             >
-              <div className="py-6 space-y-4">
+              <div className="py-4 space-y-3">
                 {site.header.nav.map((item) => (
                   <a
                     key={item.href}
                     href={item.href}
-                    className="block py-2 text-base text-gray-600 hover:text-black transition-colors font-medium"
+                    className="block py-3 px-2 text-base text-gray-600 hover:text-black transition-colors font-medium min-h-[44px] flex items-center"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -94,7 +93,7 @@ const Header = () => {
                 ))}
                 <a
                   href={whatsappLink(site.hero.waMessage)}
-                  className="block mt-6 btn btn-primary text-center"
+                  className="block mt-4 btn btn-primary text-center min-h-[44px] flex items-center justify-center"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsMobileMenuOpen(false)}

@@ -76,7 +76,7 @@ const Testimonials = () => {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <motion.h2
-              className="font-display text-display text-black text-center mb-6 sm:mb-10 md:mb-16 lg:mb-20 px-3 sm:px-4"
+              className="font-display text-display text-black text-center mb-10 sm:mb-16 md:mb-20 px-4"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -85,7 +85,7 @@ const Testimonials = () => {
             </motion.h2>
 
             <div className="relative">
-              <div className="overflow-hidden rounded-3xl bg-gray-50">
+              <div className="overflow-hidden rounded-2xl sm:rounded-3xl bg-gray-50">
                 <AnimatePresence mode="wait">
                   {testimonials.map((t, i) => (
                     i === index && (
@@ -95,12 +95,12 @@ const Testimonials = () => {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -50 }}
                         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                        className="p-8 md:p-12 lg:p-16"
+                        className="p-4 sm:p-8 md:p-12 lg:p-16"
                       >
                         {t.type === 'text' ? (
-                          <div className="text-center max-w-3xl mx-auto px-3 sm:px-4">
+                          <div className="text-center max-w-3xl mx-auto px-2 sm:px-4">
                             <motion.p
-                              className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 italic leading-relaxed"
+                              className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 italic leading-relaxed"
                               initial={{ opacity: 0, y: 10 }}
                               animate={{ opacity: 1, y: 0 }}
                               transition={{ duration: 0.5, delay: 0.2 }}
@@ -110,7 +110,7 @@ const Testimonials = () => {
                           </div>
                         ) : t.type === 'video' ? (
                           <div className="flex flex-col items-center gap-8">
-                            <div className="w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg">
+                            <div className="w-full max-w-4xl mx-auto rounded-lg sm:rounded-2xl overflow-hidden shadow-lg">
                               <div className="aspect-video bg-black">
                                 <iframe
                                   src={`${t.embedUrl}?autoplay=0&controls=1`}
@@ -123,35 +123,35 @@ const Testimonials = () => {
                             </div>
 
                             <motion.div
-                              className="mt-4 text-center max-w-3xl mx-auto"
+                              className="mt-4 sm:mt-6 text-center max-w-3xl mx-auto px-2 sm:px-0"
                               initial={{ opacity: 0, y: 10 }}
                               animate={{ opacity: 1, y: 0 }}
                               transition={{ duration: 0.5, delay: 0.2 }}
                             >
-                              <p className="text-xl md:text-2xl text-gray-700 italic leading-relaxed mb-4">"{t.quote}"</p>
-                              <p className="text-gray-600 font-medium">— {t.name}</p>
+                              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 italic leading-relaxed mb-3 sm:mb-4">"{t.quote}"</p>
+                              <p className="text-sm sm:text-base text-gray-600 font-medium">— {t.name}</p>
                             </motion.div>
                           </div>
                         ) : (
-                          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                          <div className="flex flex-col md:flex-row items-center gap-4 sm:gap-6 md:gap-8 lg:gap-12">
                             <div className="md:w-1/3 flex-shrink-0">
                               <motion.img
                                 src={t.image || ''}
                                 alt={`Depoimento de ${t.name}`}
-                                className="w-full max-w-xs aspect-square object-cover rounded-2xl mx-auto shadow-lg cursor-pointer"
+                                className="w-full max-w-xs aspect-square object-cover rounded-lg sm:rounded-2xl mx-auto shadow-lg cursor-pointer"
                                 whileHover={{ scale: 1.02 }}
                                 onClick={() => t.image && setSelectedImage(t.image)}
                                 transition={{ duration: 0.3 }}
                               />
                             </div>
                             <motion.div
-                              className="md:w-2/3 text-center md:text-left"
+                              className="md:w-2/3 text-center md:text-left px-2 sm:px-0"
                               initial={{ opacity: 0, y: 20 }}
                               animate={{ opacity: 1, y: 0 }}
                               transition={{ delay: 0.2, duration: 0.5 }}
                             >
-                              <p className="text-xl md:text-2xl text-gray-700 italic mb-6 leading-relaxed">"{t.quote}"</p>
-                              <p className="text-gray-600 font-medium">— {t.name}</p>
+                              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 italic mb-4 sm:mb-6 leading-relaxed">"{t.quote}"</p>
+                              <p className="text-sm sm:text-base text-gray-600 font-medium">— {t.name}</p>
                             </motion.div>
                           </div>
                         )}
@@ -162,28 +162,28 @@ const Testimonials = () => {
 
                 {/* Navigation Buttons */}
                 <motion.button
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg z-10 border border-gray-200"
+                  className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 sm:p-3 rounded-full shadow-lg z-10 border border-gray-200 min-h-[44px] min-w-[44px] flex items-center justify-center"
                   onClick={prev}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   aria-label="Anterior"
                 >
-                  <ChevronLeft className="w-5 h-5 text-black" />
+                  <ChevronLeft className="w-4 sm:w-5 h-4 sm:h-5 text-black" />
                 </motion.button>
 
                 <motion.button
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg z-10 border border-gray-200"
+                  className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 sm:p-3 rounded-full shadow-lg z-10 border border-gray-200 min-h-[44px] min-w-[44px] flex items-center justify-center"
                   onClick={next}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   aria-label="Próximo"
                 >
-                  <ChevronRight className="w-5 h-5 text-black" />
+                  <ChevronRight className="w-4 sm:w-5 h-4 sm:h-5 text-black" />
                 </motion.button>
               </div>
 
               {/* Dots Indicators */}
-              <div className="flex items-center justify-center gap-2 mt-8">
+              <div className="flex items-center justify-center gap-2 mt-6 sm:mt-8">
                 {testimonials.map((_, i) => (
                   <motion.button
                     key={i}
@@ -191,11 +191,10 @@ const Testimonials = () => {
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.8 }}
                     aria-label={`Ir para depoimento ${i + 1}`}
-                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      i === index
-                        ? 'bg-black w-8'
+                    className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-all duration-300 ${i === index
+                        ? 'bg-black w-6 sm:w-8'
                         : 'bg-gray-300 hover:bg-gray-400'
-                    }`}
+                      }`}
                   />
                 ))}
               </div>
