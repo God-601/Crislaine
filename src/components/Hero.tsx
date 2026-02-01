@@ -54,11 +54,11 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="relative aspect-[4/3] md:aspect-[16/10] overflow-hidden rounded-lg sm:rounded-2xl md:rounded-3xl bg-gray-50">
+            <div className="relative aspect-[4/3] md:aspect-[16/10] overflow-hidden rounded-lg sm:rounded-2xl md:rounded-3xl">
               <img
                 src="https://i.ibb.co/B2wHmtjM/DSC7726-Crislaine-de-Carvalho.jpg"
                 alt="Crislaine de Carvalho"
-                className="w-full h-full object-contain object-center"
+                className="w-full h-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>

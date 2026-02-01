@@ -51,7 +51,7 @@ const AboutTherapist = () => {
                   <img
                     src="https://i.ibb.co/B2wHmtjM/DSC7726-Crislaine-de-Carvalho.jpg"
                     alt="Crislaine de Carvalho - Terapeuta Integrativa"
-                    className="w-full aspect-[3/4] object-contain object-center rounded-lg sm:rounded-2xl md:rounded-3xl shadow-xl"
+                    className="w-full aspect-[3/4] object-cover object-center rounded-lg sm:rounded-2xl md:rounded-3xl shadow-xl"
                   />
                 </div>
               </motion.div>
