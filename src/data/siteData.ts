@@ -4,7 +4,7 @@ export const site = {
         subtitle: 'Descubra quais padrões mentais e emocionais estão mantendo a ansiedade ativa na sua vida. Um processo de autoconhecimento com clareza e acompanhamento personalizado para você entender o que realmente está te travando.',
         ctaText: 'Quero fazer o teste gratuito',
         waNumber: '5579999663270',
-        waMessage: 'Oi Crislaine, quero fazer o teste gratuito de identificação de travas mentais.'
+        waMessage: 'Oi, seja bem-vinda\n\nQue bom te ver por aqui.\n\nO Teste de Identificação de Travas Mentais é gratuito e acontece em sessão online, onde eu explico o resultado com clareza e cuidado.\n\nO primeiro passo é agendarmos sua sessão.\n\nMe conta, por favor:\nqual o melhor horário para você, tarde ou noite?'
     },
 
     identification: {
@@ -84,9 +84,9 @@ export const site = {
         finalText: 'Comece pela clareza. O primeiro passo para qualquer transformação real é entender o que realmente está acontecendo. Sem clareza, você continua tentando soluções aleatórias que não funcionam. Com clareza, você sabe exatamente por onde começar e o que precisa ser trabalhado.',
         ctaText: 'Quero fazer o teste gratuito',
         waNumber: '5579999663270',
-        waMessage: 'Oi Crislaine, quero fazer o teste gratuito de identificação de travas mentais.',
+        waMessage: 'Oi, seja bem-vinda\n\nQue bom te ver por aqui.\n\nO Teste de Identificação de Travas Mentais é gratuito e acontece em sessão online, onde eu explico o resultado com clareza e cuidado.\n\nO primeiro passo é agendarmos sua sessão.\n\nMe conta, por favor:\nqual o melhor horário para você, tarde ou noite?',
         phone: '+55 79 99966-3270',
-        email: 'crisccterapeuta@gmail.com',
+        email: 'crislainedpj@gmail.com',
         instagram: 'https://www.instagram.com/crislaine.terapeuta?igsh=MTJlYTl1ZjU3MjJ6YQ=='
     },
 
