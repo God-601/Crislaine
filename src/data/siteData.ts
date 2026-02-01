@@ -39,11 +39,16 @@ export const site = {
 
     afterTest: {
         title: 'E depois do teste?',
+        intro: 'O principal objetivo dessa sessão é clareza emocional.',
+        items: [
+            'quais padrões mentais e emocionais estão mais ativos',
+            'como essas travas impactam suas emoções hoje',
+            'por que a ansiedade aparece da forma que aparece'
+        ],
         paragraphs: [
-            'Após entender suas travas emocionais com clareza, você decide com tranquilidade e sem pressão qual será o próximo passo. Não há compromisso ou obrigação de continuar.',
-            'Se fizer sentido para você e você sentir que é o momento certo, eu explico detalhadamente como funciona o processo completo de destrave emocional, quais técnicas e abordagens utilizo, e de que forma posso te acompanhar nesse caminho de transformação, sempre respeitando seu ritmo e suas necessidades.',
-            'Sem pressão, sem obrigação, sem promessas vazias. Meu compromisso é com a clareza e a honestidade. Se você não estiver pronta ou não sentir que é o momento, tudo bem. O importante é que você saia da sessão com mais autoconhecimento e clareza sobre o que está acontecendo.',
-            'O próximo passo só acontece se houver alinhamento genuíno e desejo real da sua parte. Não trabalho com vendas agressivas ou pressão para contratar. Acredito que a transformação só acontece quando há vontade verdadeira e comprometimento pessoal.'
+            'Esse momento não é sobre decidir nada. É sobre entender a si mesma com mais consciência.',
+            'Muitas mulheres relatam que só essa clareza já traz alívio, porque deixa de existir confusão interna.',
+            'Depois disso, cada pessoa segue no seu tempo, do jeito que fizer mais sentido para ela.'
         ]
     },
 
