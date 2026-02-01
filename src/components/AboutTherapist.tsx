@@ -50,7 +50,7 @@ const AboutTherapist = () => {
                 <div className="relative">
                   <img
                     src="https://i.ibb.co/B2wHmtjM/DSC7726-Crislaine-de-Carvalho.jpg"
-                    alt="Crislaine de Carvalho - Especialista em Terapia de Alta Performance e Aromaterapia"
+                    alt="Crislaine de Carvalho - Terapeuta Integrativa"
                     className="w-full aspect-[3/4] object-cover object-[center_15%] rounded-2xl sm:rounded-3xl shadow-xl"
                   />
                 </div>

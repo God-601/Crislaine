@@ -10,9 +10,10 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-display font-semibold mb-4">Crislaine de Carvalho</h3>
               <p className="text-gray-400 text-sm mb-2">
-                Especialista em Terapia de Alta Performance + Aromaterapia
+                Terapeuta Integrativa
               </p>
-              <p className="text-gray-400 text-sm">Atendimento 100% online</p>
+              <p className="text-gray-400 text-sm">Terapia de Alta Performance Mental• Ansiedade • Aromaterapia</p>
+              <p className="text-gray-400 text-sm">Pós-graduanda em Neurociência e Práticas Terapêuticas</p>
             </div>
 
             <div>
