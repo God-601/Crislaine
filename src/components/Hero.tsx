@@ -6,19 +6,12 @@ const Hero = () => {
   const waLink = whatsappLink(site.hero.waMessage);
 
   return (
-<<<<<<< HEAD
-    <section className="min-h-screen flex items-center justify-center bg-white pt-16 sm:pt-20 pb-12 sm:pb-20 overflow-hidden">
+
+    <section className="min-h-screen flex items-center justify-center bg-white pt-12 sm:pt-20 pb-12 sm:pb-20 overflow-hidden">
       <div className="container-custom">
         <div className="max-w-7xl mx-auto">
           {/* Text Content */}
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-=======
-    <section className="min-h-screen flex items-center justify-center bg-white pt-20 sm:pt-24 pb-12 sm:pb-20 overflow-hidden">
-      <div className="container-custom">
-        <div className="max-w-7xl mx-auto">
-          {/* Text Content */}
-          <div className="text-center mb-12 sm:mb-16 md:mb-24">
->>>>>>> a7f8d39bce55e39bf4e60fe60c502e921cb97f0a
             <motion.h1
               className="font-display text-hero text-black mb-6 sm:mb-8 md:mb-12 max-w-5xl mx-auto px-2"
               initial={{ opacity: 0, y: 30 }}

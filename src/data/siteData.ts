@@ -50,20 +50,11 @@ export const site = {
     forWho: {
         title: 'Para quem é esse teste',
         for: [
-<<<<<<< HEAD
             'Mulheres que sentem ansiedade recorrente e percebem que isso está impactando negativamente sua qualidade de vida',
             'Mulheres que querem se entender emocionalmente de forma profunda, não apenas superficialmente',
             'Mulheres que percebem que algo interno está impedindo seus avanços, mesmo quando fazem esforços para mudar',
             'Mulheres que buscam clareza antes de tomar qualquer decisão sobre investir em terapia ou processos de transformação',
             'Mulheres que valorizam um processo respeitoso, sem pressão e focado em autoconhecimento real'
-=======
-            'Mulheres entre 30 e 55 anos que estão em um momento de busca por autoconhecimento e transformação pessoal',
-            'Que sentem ansiedade recorrente e percebem que isso está impactando negativamente sua qualidade de vida',
-            'Que querem se entender emocionalmente de forma profunda, não apenas superficialmente',
-            'Que percebem que algo interno está impedindo seus avanços, mesmo quando fazem esforços para mudar',
-            'Que buscam clareza antes de tomar qualquer decisão sobre investir em terapia ou processos de transformação',
-            'Que valorizam um processo respeitoso, sem pressão e focado em autoconhecimento real'
->>>>>>> a7f8d39bce55e39bf4e60fe60c502e921cb97f0a
         ],
         notFor: 'Não é para quem busca soluções rápidas, mágicas ou fórmulas prontas. O teste requer honestidade consigo mesma e abertura para olhar para dentro, o que pode ser desconfortável mas é necessário para transformação real.'
     },
