@@ -2,15 +2,17 @@ import { site } from '../data/siteData';
 
 const Method = () => {
     return (
-        <section className="py-16 bg-white">
+        <section className="py-20 md:py-28 bg-cream">
             <div className="container mx-auto px-4">
-                <div className="max-w-3xl mx-auto text-center">
-                    <h2 className="text-2xl md:text-3xl font-semibold text-verde-escuro mb-4">{site.method.title}</h2>
-                    {site.method.paragraphs.map((p, i) => (
-                        <p key={i} className="text-gray-700 mb-4">
-                            {p}
-                        </p>
-                    ))}
+                <div className="max-w-3xl mx-auto">
+                    <h2 className="h2 text-center mb-12">{site.method.title}</h2>
+                    <div className="space-y-6">
+                        {site.method.paragraphs.map((p, i) => (
+                            <p key={i} className="text-charcoal text-lg leading-relaxed">
+                                {p}
+                            </p>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

@@ -28,8 +28,8 @@ const Button: React.FC<ButtonProps> = ({
     'inline-flex items-center px-6 py-3 font-medium rounded-2xl shadow-md transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2';
 
   const variantClasses = {
-    primary: 'bg-verde-escuro text-white hover:bg-opacity-90 focus:ring-verde-escuro glow-on-hover shine-effect',
-    secondary: 'bg-emerald-600 text-white hover:bg-emerald-700 focus:ring-emerald-600'
+    primary: 'bg-olive text-cream hover:bg-accent focus:ring-olive',
+    secondary: 'bg-transparent border-2 border-olive text-olive hover:bg-olive hover:text-cream focus:ring-olive'
   };
 
   const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${className}`;

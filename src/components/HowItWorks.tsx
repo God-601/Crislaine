@@ -12,16 +12,16 @@ const HowItWorks = () => {
   const items = site.process.items;
 
   return (
-    <section className="py-16 bg-bege-claro overflow-hidden" ref={ref}>
+    <section className="py-20 md:py-28 bg-beige overflow-hidden" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
-          className="max-w-4xl mx-auto text-center"
+          className="max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8 }}
         >
           <motion.h2
-            className="text-2xl md:text-3xl font-semibold text-verde-escuro mb-8"
+            className="h2 text-center mb-16"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -29,24 +29,24 @@ const HowItWorks = () => {
             {site.process.title}
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
             {items.map((item, index) => (
               <motion.div
                 key={index}
-                className="flex items-start bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 cursor-default"
+                className="flex items-start bg-cream p-6 rounded-2xl border border-beige hover:border-sage transition-all duration-300 hover:-translate-y-1 cursor-default"
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
                 whileHover={{ scale: 1.02 }}
               >
-                <div className="text-verde-escuro mr-3 text-2xl opacity-75">•</div>
-                <p className="text-gray-800 font-normal">{item}</p>
+                <div className="text-sage mr-4 text-3xl font-light flex-shrink-0">•</div>
+                <p className="text-charcoal font-normal leading-relaxed">{item}</p>
               </motion.div>
             ))}
           </div>
 
           <motion.div
-            className="mt-6"
+            className="flex justify-center"
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.6 }}

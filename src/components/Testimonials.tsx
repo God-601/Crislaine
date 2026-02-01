@@ -52,23 +52,23 @@ const Testimonials = () => {
   return (
     <>
       <section
-        className="py-16 bg-bege-claro overflow-hidden"
+        className="py-20 md:py-28 bg-beige overflow-hidden"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-2xl md:text-3xl font-semibold text-verde-escuro mb-8">
+              <h2 className="h2 text-center mb-16">
                 Transformações que inspiram
               </h2>
 
               <div className="relative">
-                <div className="overflow-hidden rounded-2xl shadow-lg bg-white">
+                <div className="overflow-hidden rounded-2xl shadow-lg bg-white border border-beige">
                   <AnimatePresence mode="wait">
                     {testimonials.map((t, i) => (
                       i === index && (
@@ -100,12 +100,12 @@ const Testimonials = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.4, delay: 0.1 }}
                               >
-                                <p className="text-gray-800 italic text-lg md:text-xl">"{t.quote}"</p>
-                                <p className="text-verde-escuro font-medium mt-2">- {t.name}</p>
+                                <p className="text-charcoal italic text-lg md:text-xl leading-relaxed">"{t.quote}"</p>
+                                <p className="text-sage font-medium mt-4">— {t.name}</p>
                               </motion.div>
                             </div>
                           ) : (
-                            <div className="flex flex-col md:flex-row items-center gap-6">
+                            <div className="flex flex-col md:flex-row items-center gap-8">
                               <div className="md:w-1/3 flex-shrink-0">
                                 <motion.img
                                   src={t.image || ''}
@@ -122,8 +122,8 @@ const Testimonials = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.5 }}
                               >
-                                <p className="text-gray-800 italic text-lg md:text-xl mb-4">"{t.quote}"</p>
-                                <p className="text-verde-escuro font-medium">- {t.name}</p>
+                                <p className="text-charcoal italic text-lg md:text-xl mb-4 leading-relaxed">"{t.quote}"</p>
+                                <p className="text-sage font-medium">— {t.name}</p>
                               </motion.div>
                             </div>
                           )}
@@ -134,23 +134,23 @@ const Testimonials = () => {
 
                   {/* Navigation Buttons */}
                   <motion.button
-                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-cream/80 hover:bg-cream p-2 rounded-full shadow-md z-10 border border-beige"
                     onClick={prev}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     aria-label="Anterior"
                   >
-                    <ChevronLeft className="w-6 h-6 text-verde-escuro" />
+                    <ChevronLeft className="w-6 h-6 text-olive" />
                   </motion.button>
 
                   <motion.button
-                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-cream/80 hover:bg-cream p-2 rounded-full shadow-md z-10 border border-beige"
                     onClick={next}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     aria-label="Próximo"
                   >
-                    <ChevronRight className="w-6 h-6 text-verde-escuro" />
+                    <ChevronRight className="w-6 h-6 text-olive" />
                   </motion.button>
                 </div>
 
@@ -164,8 +164,8 @@ const Testimonials = () => {
                       whileTap={{ scale: 0.8 }}
                       aria-label={`Ir para depoimento ${i + 1}`}
                       className={`w-3 h-3 rounded-full transition-colors duration-300 ${i === index
-                        ? 'bg-verde-escuro scale-125'
-                        : 'bg-verde-escuro/30 hover:bg-verde-escuro/50'
+                        ? 'bg-sage scale-125'
+                        : 'bg-sage/30 hover:bg-sage/50'
                         }`}
                     />
                   ))}

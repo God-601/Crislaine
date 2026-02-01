@@ -17,7 +17,7 @@ const WhatsAppButton = () => {
   return (
     <a
       href={waLink}
-      className={`fixed bottom-6 right-6 bg-verde-escuro hover:opacity-95 hover:scale-110 hover:rotate-3 text-white p-3.5 rounded-full shadow-lg z-50 transition-all duration-300 ease-in-out ${isVisible
+      className={`fixed bottom-6 right-6 bg-olive hover:bg-accent hover:scale-110 hover:rotate-3 text-cream p-3.5 rounded-full shadow-lg z-50 transition-all duration-300 ease-in-out ${isVisible
         ? 'opacity-100 transform translate-y-0'
         : 'opacity-0 transform translate-y-10'
         }`}

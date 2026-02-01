@@ -32,13 +32,13 @@ export default function CookieConsent() {
     if (!show) return null;
 
     return (
-        <div className="fixed bottom-4 left-4 right-4 z-50 bg-white shadow-lg rounded-md p-4 flex flex-col md:flex-row items-center justify-between gap-3">
-            <div className="text-sm text-gray-800">
+        <div className="fixed bottom-4 left-4 right-4 z-50 bg-cream shadow-lg rounded-2xl p-4 border border-beige flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="text-sm text-charcoal">
                 Este site usa cookies para melhorar experiência e para medir conversões (Google Ads). Você aceita o uso de analytics?
             </div>
             <div className="flex gap-2">
-                <button onClick={decline} className="px-3 py-1 rounded bg-gray-200 text-gray-800">Recusar</button>
-                <button onClick={accept} className="px-3 py-1 rounded bg-verde-escuro text-white">Aceitar</button>
+                <button onClick={decline} className="px-4 py-2 rounded-lg bg-beige text-dark hover:bg-sage/30 transition-colors">Recusar</button>
+                <button onClick={accept} className="px-4 py-2 rounded-lg bg-olive text-cream hover:bg-accent transition-colors">Aceitar</button>
             </div>
         </div>
     );

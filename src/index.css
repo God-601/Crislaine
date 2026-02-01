@@ -2,84 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Shine Effect */
-.shine-effect {
-    position: relative;
-    overflow: hidden;
-}
-
-.shine-effect::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -75%;
-    z-index: 2;
-    display: block;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to right,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 0.3) 100%);
-    transform: skewX(-25deg);
-    animation: shine 5s infinite;
-}
-
-@keyframes shine {
-    0% {
-        left: -75%;
+/* Base Typography */
+@layer base {
+    body {
+        @apply font-body text-dark bg-cream;
     }
 
-    20% {
-        left: 125%;
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply font-display font-normal leading-tight;
     }
 
-    100% {
-        left: 125%;
+    h1 {
+        @apply text-5xl md:text-6xl lg:text-7xl;
     }
-}
 
-/* Glow Effect */
-.glow-on-hover {
-    position: relative;
-}
+    h2 {
+        @apply text-4xl md:text-5xl;
+    }
 
-.glow-on-hover::after {
-    content: '';
-    position: absolute;
-    inset: -2px;
-    background: linear-gradient(45deg, #22c55e, #15803d, #059669);
-    filter: blur(10px);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: -1;
-    border-radius: inherit;
-}
+    h3 {
+        @apply text-2xl md:text-3xl;
+    }
 
-.glow-on-hover:hover::after {
-    opacity: 0.5;
-}
-
-/* Smooth section transitions */
-section {
-    @apply transition-all duration-500;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Modern image hover effects */
-img {
-    @apply transition-all duration-300;
-}
-
-img:hover {
-    @apply brightness-105;
-}
-
-/* Smooth transitions for all interactive elements */
-input,
-textarea,
-select {
-    @apply transition-all duration-200;
+    p {
+        @apply text-lg leading-relaxed;
+    }
 }
 
 /* Smooth scrolling */
@@ -87,29 +37,68 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Hover effects */
+/* Modern transitions */
 a,
-button {
+button,
+input,
+textarea,
+select {
     @apply transition-all duration-300;
 }
 
-/* Modern hover effects for cards */
+/* Image transitions */
+img {
+    @apply transition-all duration-500;
+}
+
+/* Button base styles */
+.btn {
+    @apply px-8 py-4 text-base font-medium rounded-lg transition-all duration-300;
+}
+
+.btn-primary {
+    @apply bg-olive text-cream hover:bg-accent shadow-lg hover:shadow-xl hover:scale-105;
+}
+
+.btn-secondary {
+    @apply bg-transparent border-2 border-olive text-olive hover:bg-olive hover:text-cream;
+}
+
+/* Section spacing */
+section {
+    @apply py-section overflow-hidden;
+}
+
+/* Hover card effect */
 .hover-card {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    @apply transition-all duration-500 hover:shadow-2xl hover:-translate-y-2;
 }
 
-/* Elegant hover effect for text links */
-.hover-link {
-    @apply relative inline-block;
+/* Text animation */
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
 }
 
-.hover-link::after {
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Underline animation */
+.underline-anim {
+    @apply relative pb-2;
+}
+
+.underline-anim::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-verde-escuro transition-all duration-300;
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-olive transition-all duration-500;
 }
 
-.hover-link:hover::after {
+.underline-anim:hover::after {
     @apply w-full;
 }
-
-/* Utilities already defined above; duplicates removed */

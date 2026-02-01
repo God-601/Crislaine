@@ -27,32 +27,34 @@ const Benefits = () => {
   ];
 
   return (
-    <section id="beneficios" className="py-16">
+    <section id="beneficios" className="py-20 md:py-28 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-800 mb-3">
-            O que você pode conquistar:
-          </h2>
-          <p className="text-center text-gray-600 mb-12">
-            Resultados que transformam toda a sua experiência de vida
-          </p>
+          <div className="text-center mb-16">
+            <h2 className="h2 mb-4">
+              O que você pode conquistar
+            </h2>
+            <p className="text-charcoal text-lg">
+              Resultados que transformam toda a sua experiência de vida
+            </p>
+          </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray transition-all hover:shadow-md"
+                className="bg-cream p-8 rounded-2xl border border-beige hover:border-sage transition-all duration-300 group"
               >
-                <div className="flex items-center mb-3">
-                  <Sparkles className="h-5 w-5 text-emerald-500 mr-2" />
-                  <h3 className="font-medium text-lg text-gray-800">{benefit.title}</h3>
+                <div className="flex items-start gap-4 mb-4">
+                  <Sparkles className="h-6 w-6 text-sage flex-shrink-0 mt-1" />
+                  <h3 className="font-display text-lg text-dark">{benefit.title}</h3>
                 </div>
-                <p className="text-gray-700 pl-7 font-normal leading-relaxed">{benefit.description}</p>
+                <p className="text-charcoal leading-relaxed">{benefit.description}</p>
               </div>
             ))}
           </div>
 
-          <div className="mt-12 text-center">
+          <div className="text-center">
             <Button
               text="Quero mais equilíbrio na minha vida"
               href="https://wa.me/5579999663270?text=Quero%20saber%20mais%20sobre%20sua%20terapia!"

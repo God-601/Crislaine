@@ -32,10 +32,10 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="py-16">
+    <section id="faq" className="py-20 md:py-28 bg-cream">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-800 mb-12">
+          <h2 className="h2 text-center mb-16">
             Perguntas frequentes
           </h2>
           
@@ -43,17 +43,17 @@ const FAQ = () => {
             {faqs.map((faq, index) => (
               <div 
                 key={index} 
-                className="border border-gray-200 rounded-lg overflow-hidden transition-all"
+                className="border border-beige rounded-2xl overflow-hidden transition-all bg-white hover:border-sage"
               >
                 <button
-                  className="flex items-center justify-between w-full p-5 text-left bg-white hover:bg-gray-50 focus:outline-none"
+                  className="flex items-center justify-between w-full p-6 text-left hover:bg-cream/50 focus:outline-none"
                   onClick={() => toggleAccordion(index)}
                 >
-                  <span className="text-gray-800 font-medium">{faq.question}</span>
+                  <span className="text-dark font-display text-lg">{faq.question}</span>
                   {openIndex === index ? (
-                    <Minus className="h-5 w-5 text-emerald-600" />
+                    <Minus className="h-5 w-5 text-sage flex-shrink-0 ml-4" />
                   ) : (
-                    <Plus className="h-5 w-5 text-emerald-600" />
+                    <Plus className="h-5 w-5 text-sage flex-shrink-0 ml-4" />
                   )}
                 </button>
                 <div 
@@ -61,8 +61,8 @@ const FAQ = () => {
                     openIndex === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
-                  <div className="p-5 pt-0 border-t border-gray-100">
-                    <p className="text-gray-600">{faq.answer}</p>
+                  <div className="p-6 pt-0 border-t border-beige">
+                    <p className="text-charcoal leading-relaxed">{faq.answer}</p>
                   </div>
                 </div>
               </div>
