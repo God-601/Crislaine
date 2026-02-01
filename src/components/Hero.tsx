@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
 
-    <section className="min-h-screen flex items-center justify-center bg-white pt-12 sm:pt-20 pb-12 sm:pb-20 overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center bg-white pt-8 sm:pt-20 pb-12 sm:pb-20 overflow-hidden">
       <div className="container-custom">
         <div className="max-w-7xl mx-auto">
           {/* Text Content */}
