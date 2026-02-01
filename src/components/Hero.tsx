@@ -7,11 +7,11 @@ const Hero = () => {
 
   return (
 
-    <section className="min-h-screen flex items-center justify-center bg-white pt-8 sm:pt-12 pb-12 sm:pb-20 overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center bg-white pt-20 sm:pt-28 md:pt-32 pb-12 sm:pb-20 overflow-hidden">
       <div className="container-custom">
         <div className="max-w-7xl mx-auto">
           {/* Text Content */}
-          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16 mt-12 sm:mt-16 md:mt-20">
             <motion.h1
               className="font-display text-hero text-black mb-6 sm:mb-8 md:mb-12 max-w-5xl mx-auto px-2"
               initial={{ opacity: 0, y: 30 }}
