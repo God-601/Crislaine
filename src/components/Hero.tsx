@@ -49,7 +49,7 @@ const Hero = () => {
 
           {/* Image */}
           <motion.div
-            className="max-w-4xl mx-auto px-2 sm:px-4"
+            className="max-w-4xl mx-auto px-2 sm:px-4 mt-12 sm:mt-16 md:mt-20 lg:mt-24"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
