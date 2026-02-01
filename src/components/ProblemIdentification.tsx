@@ -18,10 +18,10 @@ const ProblemIdentification = () => {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          <h2 className="font-display text-display text-black mb-12 md:mb-16">
+          <h2 className="font-display text-display text-black mb-8 sm:mb-12 md:mb-16 px-4">
             {site.identification.title}
           </h2>
-          <div className="space-y-8 md:space-y-10 text-left">
+          <div className="space-y-6 sm:space-y-8 md:space-y-10 text-left px-4">
             {site.identification.paragraphs.map((p, i) => {
               if (p.includes('Talvez você:')) {
                 const parts = p.split('Talvez você:');
@@ -33,13 +33,13 @@ const ProblemIdentification = () => {
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ duration: 0.8, delay: 0.2 + i * 0.1, ease: [0.16, 1, 0.3, 1] }}
                   >
-                    <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-4">
+                    <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed mb-4">
                       {parts[0]}Talvez você:
                     </p>
-                    <ul className="space-y-3 ml-6">
+                    <ul className="space-y-3 ml-4 sm:ml-6">
                       {items.map((item, idx) => (
-                        <li key={idx} className="text-xl md:text-2xl text-gray-600 leading-relaxed flex items-start gap-3">
-                          <span className="text-black mt-1">•</span>
+                        <li key={idx} className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed flex items-start gap-3">
+                          <span className="text-black mt-1 flex-shrink-0">•</span>
                           <span>{item.trim()}</span>
                         </li>
                       ))}
@@ -50,7 +50,7 @@ const ProblemIdentification = () => {
               return (
                 <motion.p
                   key={i}
-                  className="text-xl md:text-2xl text-gray-600 leading-relaxed"
+                  className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed"
                   initial={{ opacity: 0, y: 20 }}
                   animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.8, delay: 0.2 + i * 0.1, ease: [0.16, 1, 0.3, 1] }}

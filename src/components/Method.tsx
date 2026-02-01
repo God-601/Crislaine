@@ -18,10 +18,10 @@ const Method = () => {
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 >
-                    <h2 className="font-display text-display text-black text-center mb-12 md:mb-16">
+                    <h2 className="font-display text-display text-black text-center mb-8 sm:mb-12 md:mb-16 px-4">
                         {site.method.title}
                     </h2>
-                    <div className="space-y-8 md:space-y-10">
+                    <div className="space-y-6 sm:space-y-8 md:space-y-10 px-4">
                         {site.method.paragraphs.map((p, i) => {
                             if (p.includes('⚠️')) {
                                 return (
@@ -53,8 +53,8 @@ const Method = () => {
                                         <ul className="space-y-4 list-none">
                                             {items.map((item, idx) => (
                                                 <li key={idx} className="flex items-start gap-3">
-                                                    <span className="text-black mt-1 text-xl">•</span>
-                                                    <span className="text-xl md:text-2xl text-gray-600 leading-relaxed">{item.trim()}</span>
+                                                    <span className="text-black mt-1 flex-shrink-0">•</span>
+                                                    <span className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">{item.trim()}</span>
                                                 </li>
                                             ))}
                                         </ul>
@@ -64,7 +64,7 @@ const Method = () => {
                             return (
                                 <motion.p
                                     key={i}
-                                    className="text-xl md:text-2xl text-gray-600 leading-relaxed"
+                                    className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                                     transition={{ duration: 0.8, delay: 0.2 + i * 0.1, ease: [0.16, 1, 0.3, 1] }}

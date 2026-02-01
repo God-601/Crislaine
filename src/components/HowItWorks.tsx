@@ -21,7 +21,7 @@ const HowItWorks = () => {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.h2
-            className="font-display text-display text-black text-center mb-16 md:mb-20"
+            className="font-display text-display text-black text-center mb-10 sm:mb-16 md:mb-20 px-4"
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -29,20 +29,20 @@ const HowItWorks = () => {
             {site.process.title}
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-16">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-12 sm:mb-16">
             {items.map((item, index) => (
               <motion.div
                 key={index}
-                className="flex items-start p-6 md:p-8 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-all duration-300 group"
+                className="flex items-start p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gray-50 hover:bg-gray-100 transition-all duration-300 group"
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.1, ease: [0.16, 1, 0.3, 1] }}
                 whileHover={{ y: -4 }}
               >
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-black text-white flex items-center justify-center text-sm font-semibold mr-4 mt-0.5">
+                <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-black text-white flex items-center justify-center text-xs sm:text-sm font-semibold mr-3 sm:mr-4 mt-0.5">
                   {index + 1}
                 </div>
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed flex-1">{item}</p>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed flex-1">{item}</p>
               </motion.div>
             ))}
           </div>

@@ -1,8 +1,8 @@
 export const site = {
     hero: {
-        title: '🧠 TESTE GRATUITO DE IDENTIFICAÇÃO DE TRAVAS MENTAIS',
-        subtitle: 'Descubra quais padrões mentais e emocionais estão mantendo a ansiedade ativa na sua vida — com clareza e acompanhamento.',
-        ctaText: '👉 Quero fazer o teste gratuito',
+        title: 'TESTE GRATUITO DE IDENTIFICAÇÃO DE TRAVAS MENTAIS',
+        subtitle: 'Descubra quais padrões mentais e emocionais estão mantendo a ansiedade ativa na sua vida. Um processo de autoconhecimento com clareza e acompanhamento personalizado para você entender o que realmente está te travando.',
+        ctaText: 'Quero fazer o teste gratuito',
         waNumber: '5579999663270',
         waMessage: 'Oi Crislaine, quero fazer o teste gratuito de identificação de travas mentais.'
     },
@@ -10,29 +10,29 @@ export const site = {
     identification: {
         title: 'Você sente que a ansiedade te trava, mas não consegue identificar o porquê?',
         paragraphs: [
-            'Você pode até dar conta da rotina… Mas por dentro sente que está sempre no limite.',
-            'Talvez você: pense demais e descanse de menos, sinta um cansaço emocional constante, tente se controlar, mas volta sempre para o mesmo padrão, sinta que poderia estar mais avançada na vida, mas algo sempre trava.',
-            '👉 A ansiedade raramente é o problema em si. Na maioria das vezes, ela é um sinal de travas emocionais não identificadas, que impactam tanto a vida pessoal quanto a profissional.'
+            'Você pode até dar conta da rotina, cumprir seus compromissos e seguir em frente. Mas por dentro sente que está sempre no limite, como se estivesse funcionando no automático, sem conseguir realmente descansar ou se sentir plena.',
+            'Talvez você se identifique com algumas dessas situações: pensa demais e descansa de menos, sente um cansaço emocional constante mesmo após dormir, tenta se controlar e se organizar, mas volta sempre para o mesmo padrão de ansiedade, percebe que poderia estar mais avançada na vida pessoal ou profissional, mas algo interno sempre trava seus avanços.',
+            'A ansiedade raramente é o problema em si. Na maioria das vezes, ela é um sinal de travas emocionais não identificadas que estão impactando tanto sua vida pessoal quanto profissional. Essas travas podem estar relacionadas a padrões de pensamento, crenças limitantes, experiências do passado não processadas ou formas de lidar com as emoções que não estão mais funcionando.'
         ]
     },
 
     method: {
-        title: '🔬 O teste funciona como um "exame de sangue da mente"',
+        title: 'O teste funciona como um "exame de sangue da mente"',
         paragraphs: [
-            'Eu costumo explicar de forma simples: Assim como um exame de sangue não trata, mas mostra o que está em desequilíbrio, o Teste de Identificação de Travas Mentais faz isso no campo emocional.',
-            'Ele identifica padrões mentais e emocionais ligados à ansiedade, mostra quais travas estão mais ativas neste momento da sua vida, revela como essas travas podem estar impedindo você de avançar na vida pessoal e profissional, e traz clareza por onde começar, sem achismos ou tentativas aleatórias.',
-            '⚠️ Importante: Ele não trata e não diagnostica. Não é um teste genérico de internet. É uma ferramenta de autoconhecimento emocional, aplicada e interpretada por mim, dentro de uma sessão individual.'
+            'Eu costumo explicar de forma simples: Assim como um exame de sangue não trata, mas mostra o que está em desequilíbrio no seu organismo, o Teste de Identificação de Travas Mentais faz exatamente isso no campo emocional. Ele oferece um diagnóstico claro do que está acontecendo internamente, sem julgamentos ou generalizações.',
+            'O teste identifica padrões mentais e emocionais específicos ligados à sua ansiedade, mostra quais travas estão mais ativas neste momento da sua vida, revela como essas travas podem estar impedindo você de avançar tanto na vida pessoal quanto profissional, e traz clareza objetiva por onde começar o processo de transformação, eliminando achismos ou tentativas aleatórias que não levam a resultados duradouros.',
+            'Importante entender: O teste não trata e não diagnostica condições médicas ou psicológicas. Não é um teste genérico de internet que você responde sozinha. É uma ferramenta profissional de autoconhecimento emocional, cuidadosamente aplicada e interpretada por mim, dentro de uma sessão individual e personalizada, onde cada resposta é analisada no contexto da sua história e da sua realidade atual.'
         ]
     },
 
     process: {
-        title: '🧭 Como funciona o teste gratuito (passo a passo)',
+        title: 'Como funciona o teste gratuito (passo a passo)',
         items: [
-            'Agendamento da sessão: Você clica no botão e agenda sua sessão comigo pelo WhatsApp.',
-            'Envio do teste: Após o agendamento, eu envio o formulário para você responder com calma.',
-            'Análise dos resultados: Eu analiso seus resultados antes da nossa conversa.',
-            'Sessão online: Na sessão, eu explico cada indicador do teste, quais travas estão mais ativas, como elas impactam sua ansiedade, e por onde começar o processo de destrave.',
-            '👉 Clareza emocional antes de qualquer decisão.'
+            'Agendamento da sessão: Você clica no botão e agenda sua sessão comigo pelo WhatsApp. Escolhemos juntas um horário que funcione para você, respeitando seu ritmo e disponibilidade.',
+            'Envio do teste: Após o agendamento, eu envio o formulário completo para você responder com calma, no seu próprio tempo. Não há pressa ou pressão. O importante é que você responda com honestidade e reflexão.',
+            'Análise dos resultados: Eu analiso profundamente seus resultados antes da nossa conversa. Cada resposta é considerada no contexto do todo, identificando padrões, conexões e travas específicas que estão ativas na sua vida.',
+            'Sessão online individual: Na sessão, que acontece por videochamada, eu explico detalhadamente cada indicador do teste, quais travas estão mais ativas e por quê, como essas travas impactam diretamente sua ansiedade no dia a dia, e por onde começar o processo de destrave de forma prática e acessível.',
+            'Clareza emocional antes de qualquer decisão. Após a sessão, você sai com uma compreensão clara do que está acontecendo internamente, sem mais tentativas de adivinhar ou suposições sobre o que pode estar errado.'
         ],
         ctaText: 'Quero fazer o teste gratuito'
     },
@@ -40,43 +40,43 @@ export const site = {
     afterTest: {
         title: 'E depois do teste?',
         paragraphs: [
-            'Após entender suas travas, você decide com tranquilidade.',
-            'Se fizer sentido para você, eu explico como funciona o processo de destrave emocional e de que forma posso te acompanhar nesse caminho.',
-            '❌ Sem pressão ❌ Sem obrigação ❌ Sem promessa',
-            'O próximo passo só acontece se houver alinhamento e desejo da sua parte.'
+            'Após entender suas travas emocionais com clareza, você decide com tranquilidade e sem pressão qual será o próximo passo. Não há compromisso ou obrigação de continuar.',
+            'Se fizer sentido para você e você sentir que é o momento certo, eu explico detalhadamente como funciona o processo completo de destrave emocional, quais técnicas e abordagens utilizo, e de que forma posso te acompanhar nesse caminho de transformação, sempre respeitando seu ritmo e suas necessidades.',
+            'Sem pressão, sem obrigação, sem promessas vazias. Meu compromisso é com a clareza e a honestidade. Se você não estiver pronta ou não sentir que é o momento, tudo bem. O importante é que você saia da sessão com mais autoconhecimento e clareza sobre o que está acontecendo.',
+            'O próximo passo só acontece se houver alinhamento genuíno e desejo real da sua parte. Não trabalho com vendas agressivas ou pressão para contratar. Acredito que a transformação só acontece quando há vontade verdadeira e comprometimento pessoal.'
         ]
     },
 
     forWho: {
         title: 'Para quem é esse teste',
         for: [
-            'Mulheres entre 30 e 55 anos',
-            'Que sentem ansiedade recorrente',
-            'Que querem se entender emocionalmente',
-            'Que percebem que algo interno está impedindo seus avanços',
-            'Que buscam clareza antes de qualquer decisão'
+            'Mulheres que sentem ansiedade recorrente e percebem que isso está impactando negativamente sua qualidade de vida',
+            'Mulheres que querem se entender emocionalmente de forma profunda, não apenas superficialmente',
+            'Mulheres que percebem que algo interno está impedindo seus avanços, mesmo quando fazem esforços para mudar',
+            'Mulheres que buscam clareza antes de tomar qualquer decisão sobre investir em terapia ou processos de transformação',
+            'Mulheres que valorizam um processo respeitoso, sem pressão e focado em autoconhecimento real'
         ],
-        notFor: '❌ Não é para quem busca soluções rápidas ou mágicas.'
+        notFor: 'Não é para quem busca soluções rápidas, mágicas ou fórmulas prontas. O teste requer honestidade consigo mesma e abertura para olhar para dentro, o que pode ser desconfortável mas é necessário para transformação real.'
     },
 
     testimonials: [
         {
             type: 'text',
-            quote: 'Me senti acolhida e consegui entender coisas sobre mim que antes estavam confusas.',
+            quote: 'Me senti acolhida e consegui entender coisas sobre mim que antes estavam confusas. O teste me deu uma visão clara do que estava me travando e por que eu reagia de certas formas. Foi um momento de muito autoconhecimento.',
         },
         {
             type: 'text',
-            quote: 'Foi a primeira vez que alguém me explicou com clareza o que eu sentia, sem julgamento.',
+            quote: 'Foi a primeira vez que alguém me explicou com clareza o que eu sentia, sem julgamento. A Crislaine foi muito respeitosa e paciente, e eu saí da sessão entendendo coisas sobre mim que eu não conseguia nomear antes.',
         },
         {
             type: 'text',
-            quote: 'Não foi algo superficial. Me ajudou a olhar para mim com mais consciência.',
+            quote: 'Não foi algo superficial. Me ajudou a olhar para mim com mais consciência e entender padrões que eu repetia sem perceber. O teste foi o ponto de partida para uma jornada de transformação que eu precisava há muito tempo.',
         },
     ],
 
     contact: {
         finalTitle: 'Você não precisa continuar tentando adivinhar o que está acontecendo com você.',
-        finalText: '👉 Comece pela clareza.',
+        finalText: 'Comece pela clareza. O primeiro passo para qualquer transformação real é entender o que realmente está acontecendo. Sem clareza, você continua tentando soluções aleatórias que não funcionam. Com clareza, você sabe exatamente por onde começar e o que precisa ser trabalhado.',
         ctaText: 'Quero fazer o teste gratuito',
         waNumber: '5579999663270',
         waMessage: 'Oi Crislaine, quero fazer o teste gratuito de identificação de travas mentais.',
