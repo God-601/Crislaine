@@ -43,7 +43,7 @@
     }
 
     p {
-        @apply text-lg md:text-xl leading-relaxed text-gray-600;
+        @apply text-base sm:text-lg md:text-xl leading-relaxed text-gray-600;
     }
 
     a {
@@ -66,8 +66,8 @@ img {
 
 /* Button base styles - Minimalista estilo Apple */
 .btn {
-    @apply px-8 py-3.5 text-base font-medium rounded-full transition-all duration-300 ease-out;
-    @apply inline-flex items-center justify-center gap-2;
+    @apply px-6 sm:px-8 py-3 sm:py-3.5 text-sm sm:text-base font-medium rounded-full transition-all duration-300 ease-out;
+    @apply inline-flex items-center justify-center gap-2 w-full sm:w-auto;
 }
 
 .btn-primary {
@@ -87,7 +87,7 @@ img {
 
 /* Section spacing */
 section {
-    @apply py-section-sm md:py-section overflow-hidden;
+    @apply py-12 sm:py-16 md:py-section overflow-hidden;
 }
 
 /* Container */

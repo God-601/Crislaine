@@ -76,7 +76,7 @@ const Testimonials = () => {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <motion.h2
-              className="font-display text-display text-black text-center mb-16 md:mb-20"
+              className="font-display text-display text-black text-center mb-10 sm:mb-16 md:mb-20 px-4"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -98,9 +98,9 @@ const Testimonials = () => {
                         className="p-8 md:p-12 lg:p-16"
                       >
                         {t.type === 'text' ? (
-                          <div className="text-center max-w-3xl mx-auto">
+                          <div className="text-center max-w-3xl mx-auto px-4">
                             <motion.p
-                              className="text-xl md:text-2xl text-gray-700 italic leading-relaxed"
+                              className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 italic leading-relaxed"
                               initial={{ opacity: 0, y: 10 }}
                               animate={{ opacity: 1, y: 0 }}
                               transition={{ duration: 0.5, delay: 0.2 }}
