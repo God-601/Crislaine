@@ -1,7 +1,7 @@
 import { site, whatsappLink } from '../data/siteData';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import Button from './Button';
+import { ArrowRight } from 'lucide-react';
 
 const HowItWorks = () => {
   const [ref, inView] = useInView({
@@ -12,35 +12,37 @@ const HowItWorks = () => {
   const items = site.process.items;
 
   return (
-    <section className="py-20 md:py-28 bg-beige overflow-hidden" ref={ref}>
-      <div className="container mx-auto px-4">
+    <section className="py-section bg-white overflow-hidden" ref={ref}>
+      <div className="container-custom">
         <motion.div
-          className="max-w-4xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.8 }}
+          className="max-w-6xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.h2
-            className="h2 text-center mb-16"
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            className="font-display text-display text-black text-center mb-16 md:mb-20"
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
             {site.process.title}
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-16">
             {items.map((item, index) => (
               <motion.div
                 key={index}
-                className="flex items-start bg-cream p-6 rounded-2xl border border-beige hover:border-sage transition-all duration-300 hover:-translate-y-1 cursor-default"
-                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                whileHover={{ scale: 1.02 }}
+                className="flex items-start p-6 md:p-8 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-all duration-300 group"
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.6, delay: 0.3 + index * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                whileHover={{ y: -4 }}
               >
-                <div className="text-sage mr-4 text-3xl font-light flex-shrink-0">•</div>
-                <p className="text-charcoal font-normal leading-relaxed">{item}</p>
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-black text-white flex items-center justify-center text-sm font-semibold mr-4 mt-0.5">
+                  {index + 1}
+                </div>
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed flex-1">{item}</p>
               </motion.div>
             ))}
           </div>
@@ -49,13 +51,17 @@ const HowItWorks = () => {
             className="flex justify-center"
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <Button
-              text={site.process.ctaText}
+            <a
               href={waLink}
-              variant="primary"
-            />
+              className="btn btn-primary inline-flex items-center gap-2 group"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {site.process.ctaText}
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+            </a>
           </motion.div>
         </motion.div>
       </div>

@@ -2,103 +2,141 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Base Typography */
+/* Base Typography - Estilo Apple */
 @layer base {
+    * {
+        @apply antialiased;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
     body {
-        @apply font-body text-dark bg-cream;
+        @apply font-body text-gray-900 bg-white;
+        font-feature-settings: "kern" 1;
+        text-rendering: optimizeLegibility;
     }
 
     h1,
     h2,
     h3,
-    h4 {
-        @apply font-display font-normal leading-tight;
+    h4,
+    h5,
+    h6 {
+        @apply font-display font-semibold;
+        letter-spacing: -0.02em;
     }
 
     h1 {
-        @apply text-5xl md:text-6xl lg:text-7xl;
+        @apply text-hero;
     }
 
     h2 {
-        @apply text-4xl md:text-5xl;
+        @apply text-display;
     }
 
     h3 {
-        @apply text-2xl md:text-3xl;
+        @apply text-title;
     }
 
     p {
-        @apply text-lg leading-relaxed;
+        @apply text-lg md:text-xl leading-relaxed text-gray-600;
+    }
+
+    a {
+        @apply transition-all duration-300 ease-out;
     }
 }
 
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Modern transitions */
-a,
+/* Modern transitions - Estilo Apple */
 button,
 input,
 textarea,
 select {
-    @apply transition-all duration-300;
+    @apply transition-all duration-300 ease-out;
 }
 
 /* Image transitions */
 img {
-    @apply transition-all duration-500;
+    @apply transition-all duration-500 ease-out;
 }
 
-/* Button base styles */
+/* Button base styles - Minimalista estilo Apple */
 .btn {
-    @apply px-8 py-4 text-base font-medium rounded-lg transition-all duration-300;
+    @apply px-8 py-3.5 text-base font-medium rounded-full transition-all duration-300 ease-out;
+    @apply inline-flex items-center justify-center gap-2;
 }
 
 .btn-primary {
-    @apply bg-olive text-cream hover:bg-accent shadow-lg hover:shadow-xl hover:scale-105;
+    @apply bg-black text-white hover:bg-gray-800 active:bg-gray-900;
+    @apply shadow-sm hover:shadow-md;
 }
 
 .btn-secondary {
-    @apply bg-transparent border-2 border-olive text-olive hover:bg-olive hover:text-cream;
+    @apply bg-white border border-gray-300 text-gray-900;
+    @apply hover:bg-gray-50 active:bg-gray-100;
+    @apply shadow-sm hover:shadow-md;
+}
+
+.btn-text {
+    @apply text-gray-900 hover:text-black underline-offset-4 hover:underline;
 }
 
 /* Section spacing */
 section {
-    @apply py-section overflow-hidden;
+    @apply py-section-sm md:py-section overflow-hidden;
 }
 
-/* Hover card effect */
+/* Container */
+.container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Hover card effect - Sutil estilo Apple */
 .hover-card {
-    @apply transition-all duration-500 hover:shadow-2xl hover:-translate-y-2;
+    @apply transition-all duration-500 ease-out;
+    @apply hover:shadow-xl hover:-translate-y-1;
 }
 
 /* Text animation */
 .fade-in {
-    animation: fadeIn 0.6s ease-in-out;
+    animation: fadeIn 0.8s ease-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+.slide-up {
+    animation: slideUp 0.8s ease-out;
 }
 
-/* Underline animation */
+/* Underline animation - Minimalista */
 .underline-anim {
-    @apply relative pb-2;
+    @apply relative;
 }
 
 .underline-anim::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-olive transition-all duration-500;
+    @apply absolute bottom-0 left-0 w-0 h-px bg-black transition-all duration-500 ease-out;
 }
 
 .underline-anim:hover::after {
     @apply w-full;
+}
+
+/* Glass morphism effect */
+.glass {
+    @apply bg-white/80 backdrop-blur-xl border border-gray-200/50;
+}
+
+/* Smooth reveal on scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

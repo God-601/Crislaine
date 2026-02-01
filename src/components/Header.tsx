@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Leaf, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { site, whatsappLink } from '../data/siteData';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -8,7 +9,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 20);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -17,27 +18,33 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-cream shadow-lg backdrop-blur'
+          ? 'glass shadow-sm'
           : 'bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-5 md:py-6">
+      <div className="container-custom">
+        <div className="flex justify-between items-center py-4 md:py-5">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <Leaf className="h-6 w-6 text-sage" />
-            <span className="font-display text-xl text-dark">Crislaine</span>
-          </div>
+          <motion.a
+            href="#"
+            className="flex items-center"
+            whileHover={{ opacity: 0.7 }}
+            transition={{ duration: 0.2 }}
+          >
+            <span className="font-display text-xl md:text-2xl font-semibold text-black tracking-tight">
+              Crislaine
+            </span>
+          </motion.a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-10">
             {site.header.nav.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-charcoal hover:text-sage transition-colors underline-anim text-sm uppercase tracking-widest"
+                className="text-sm text-gray-600 hover:text-black transition-colors duration-300 font-medium"
               >
                 {item.label}
               </a>
@@ -56,36 +63,48 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-dark"
+            className="md:hidden text-black p-2 -mr-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <nav className="md:hidden pb-6 border-t border-beige">
-            {site.header.nav.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="block py-3 text-charcoal hover:text-sage transition-colors text-sm"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {item.label}
-              </a>
-            ))}
-            <a
-              href={whatsappLink(site.hero.waMessage)}
-              className="block mt-4 btn btn-primary text-center text-sm"
-              target="_blank"
-              rel="noopener noreferrer"
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.nav
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
+              className="md:hidden overflow-hidden border-t border-gray-200"
             >
-              Agendar
-            </a>
-          </nav>
-        )}
+              <div className="py-6 space-y-4">
+                {site.header.nav.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    className="block py-2 text-base text-gray-600 hover:text-black transition-colors font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                ))}
+                <a
+                  href={whatsappLink(site.hero.waMessage)}
+                  className="block mt-6 btn btn-primary text-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Agendar
+                </a>
+              </div>
+            </motion.nav>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );

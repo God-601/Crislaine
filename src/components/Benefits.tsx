@@ -1,8 +1,14 @@
 import React from 'react';
-import { Sparkles } from 'lucide-react';
-import Button from './Button';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { ArrowRight } from 'lucide-react';
 
 const Benefits = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2
+  });
+
   const benefits = [
     {
       title: 'Paz interior e equilíbrio emocional',
@@ -27,41 +33,67 @@ const Benefits = () => {
   ];
 
   return (
-    <section id="beneficios" className="py-20 md:py-28 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="h2 mb-4">
+    <section id="beneficios" className="py-section bg-gray-50">
+      <div className="container-custom">
+        <motion.div
+          ref={ref}
+          className="max-w-6xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <div className="text-center mb-16 md:mb-20">
+            <motion.h2
+              className="font-display text-display text-black mb-6"
+              initial={{ opacity: 0 }}
+              animate={inView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
               O que você pode conquistar
-            </h2>
-            <p className="text-charcoal text-lg">
+            </motion.h2>
+            <motion.p
+              className="text-xl text-gray-600"
+              initial={{ opacity: 0 }}
+              animate={inView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
               Resultados que transformam toda a sua experiência de vida
-            </p>
+            </motion.p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {benefits.map((benefit, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="bg-cream p-8 rounded-2xl border border-beige hover:border-sage transition-all duration-300 group"
+                className="bg-white p-8 rounded-2xl hover:shadow-lg transition-all duration-300 group"
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.6, delay: 0.4 + index * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                whileHover={{ y: -4 }}
               >
-                <div className="flex items-start gap-4 mb-4">
-                  <Sparkles className="h-6 w-6 text-sage flex-shrink-0 mt-1" />
-                  <h3 className="font-display text-lg text-dark">{benefit.title}</h3>
-                </div>
-                <p className="text-charcoal leading-relaxed">{benefit.description}</p>
-              </div>
+                <h3 className="font-display text-xl text-black mb-3">{benefit.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+              </motion.div>
             ))}
           </div>
 
-          <div className="text-center">
-            <Button
-              text="Quero mais equilíbrio na minha vida"
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.8, delay: 0.9, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <a
               href="https://wa.me/5579999663270?text=Quero%20saber%20mais%20sobre%20sua%20terapia!"
-              variant="primary"
-            />
-          </div>
-        </div>
+              className="btn btn-primary inline-flex items-center gap-2 group"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Quero mais equilíbrio na minha vida
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+            </a>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
