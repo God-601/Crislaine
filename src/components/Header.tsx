@@ -18,13 +18,14 @@ const Header = () => {
 
   return (
     <header
+      style={{ paddingTop: 'env(safe-area-inset-top)' }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-          ? 'glass shadow-sm'
-          : 'bg-transparent'
+        ? 'glass shadow-sm'
+        : 'bg-transparent'
         }`}
     >
       <div className="container-custom">
-        <div className="flex justify-between items-center py-4 md:py-5">
+        <div className="flex justify-between items-center py-3 md:py-5">
           {/* Logo */}
           <motion.a
             href="#"
@@ -32,7 +33,7 @@ const Header = () => {
             whileHover={{ opacity: 0.7 }}
             transition={{ duration: 0.2 }}
           >
-            <span className="font-display text-xl md:text-2xl font-semibold text-black tracking-tight">
+            <span className="font-display text-lg md:text-2xl font-semibold text-black tracking-tight">
               Crislaine
             </span>
           </motion.a>
