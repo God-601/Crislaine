@@ -54,7 +54,7 @@ const Header = () => {
           {/* Desktop CTA */}
           <a
             href={whatsappLink(site.hero.waMessage)}
-            className="hidden md:block btn btn-primary text-sm"
+            className="hidden md:inline-flex btn btn-primary text-sm w-auto max-w-xs"
             target="_blank"
             rel="noopener noreferrer"
           >
