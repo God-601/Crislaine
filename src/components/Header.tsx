@@ -51,16 +51,6 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
-          <a
-            href={whatsappLink(site.hero.waMessage)}
-            className="hidden md:inline-flex btn btn-primary text-sm w-auto max-w-xs"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Agendar
-          </a>
-
           {/* Mobile Menu Button */}
           <button
             className="md:hidden text-black p-2 -mr-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
@@ -92,15 +82,6 @@ const Header = () => {
                     {item.label}
                   </a>
                 ))}
-                <a
-                  href={whatsappLink(site.hero.waMessage)}
-                  className="block mt-4 btn btn-primary text-center min-h-[44px] flex items-center justify-center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Agendar
-                </a>
               </div>
             </motion.nav>
           )}
