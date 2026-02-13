@@ -3,7 +3,7 @@ import { site, whatsappLink } from '../data/siteData';
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-12 sm:py-16 md:py-20 text-white">
+    <footer className="bg-green-700 py-12 sm:py-16 md:py-20 text-white">
       <div className="container-custom">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-10 md:mb-12">

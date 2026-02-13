@@ -168,7 +168,7 @@ const Testimonials = () => {
                   whileTap={{ scale: 0.9 }}
                   aria-label="Anterior"
                 >
-                  <ChevronLeft className="w-4 sm:w-5 h-4 sm:h-5 text-black" />
+                  <ChevronLeft className="w-4 sm:w-5 h-4 sm:h-5 text-green-600" />
                 </motion.button>
 
                 <motion.button
@@ -178,7 +178,7 @@ const Testimonials = () => {
                   whileTap={{ scale: 0.9 }}
                   aria-label="Próximo"
                 >
-                  <ChevronRight className="w-4 sm:w-5 h-4 sm:h-5 text-black" />
+                  <ChevronRight className="w-4 sm:w-5 h-4 sm:h-5 text-green-600" />
                 </motion.button>
               </div>
 
@@ -192,8 +192,8 @@ const Testimonials = () => {
                     whileTap={{ scale: 0.8 }}
                     aria-label={`Ir para depoimento ${i + 1}`}
                     className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-all duration-300 ${i === index
-                        ? 'bg-black w-6 sm:w-8'
-                        : 'bg-gray-300 hover:bg-gray-400'
+                      ? 'bg-green-600 w-6 sm:w-8'
+                      : 'bg-gray-300 hover:bg-gray-400'
                       }`}
                   />
                 ))}

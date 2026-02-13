@@ -21,6 +21,10 @@ export default {
         'sage': '#8B9D7F',
         'sage-light': '#A8B8A0',
         'olive': '#6B7F5C',
+        // Cores verdes
+        'green-600': '#16A34A',
+        'green-700': '#15803D',
+        'green-800': '#166534',
         // Mantendo cores existentes para compatibilidade
         'cream': '#FAFAFA',
         'beige': '#F5F5F5',

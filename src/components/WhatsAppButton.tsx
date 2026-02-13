@@ -19,7 +19,7 @@ const WhatsAppButton = () => {
   return (
     <motion.a
       href={waLink}
-      className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 bg-black hover:bg-gray-800 text-white p-3 sm:p-4 rounded-full shadow-xl z-50 transition-all duration-300 ease-out min-h-[44px] min-w-[44px] flex items-center justify-center"
+      className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 bg-green-600 hover:bg-green-700 text-white p-3 sm:p-4 rounded-full shadow-xl z-50 transition-all duration-300 ease-out min-h-[44px] min-w-[44px] flex items-center justify-center"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Entrar em contato pelo WhatsApp"
