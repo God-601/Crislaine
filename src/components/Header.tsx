@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <header
-      style={{ paddingTop: 'env(safe-area-inset-top)' }}
+      style={{ paddingTop: 'max(0.75rem, env(safe-area-inset-top))' }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
         ? 'glass shadow-sm'
         : 'bg-transparent'

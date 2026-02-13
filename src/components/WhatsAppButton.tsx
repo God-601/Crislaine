@@ -6,11 +6,12 @@ const WhatsAppButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 2000);
+    const handleScroll = () => {
+      setIsVisible(window.scrollY > 300);
+    };
 
-    return () => clearTimeout(timer);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const waLink = whatsappLink(site.hero.waMessage, site.hero.waNumber);
