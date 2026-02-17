@@ -13,24 +13,24 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: 'Como funcionam as sessões?',
-      answer: 'Realizamos encontros semanais por videochamada, com duração aproximada de 1 hora.'
+      question: 'Preciso ter câmera ligada?',
+      answer: 'Sim. A conexão visual é importante para o trabalho, pois muitas informações são captadas pela linguagem não verbal. Mas fique tranquila, o ambiente é acolhedor e sem julgamentos.'
     },
     {
-      question: 'Por quanto tempo preciso fazer terapia?',
-      answer: 'O processo completo tem duração média de 3 meses, mas cada pessoa tem seu próprio ritmo.'
+      question: 'E depois da sessão, sou obrigada a continuar?',
+      answer: 'Não. Ao final, se houver alinhamento, explico como funciona o processo estruturado do Método LIVRE. O próximo passo só acontece se você sentir que faz sentido.'
     },
     {
-      question: 'Como é feito o investimento?',
-      answer: 'Trabalhamos com pacotes mensais personalizados conforme suas necessidades. Conversamos sobre valores no primeiro contato pelo WhatsApp.'
+      question: 'Quanto custa o processo depois?',
+      answer: 'Os valores variam conforme o formato do pacote escolhido. Posso explicar ao final, sem pressão e com transparência.'
     },
     {
-      question: 'Preciso ter conhecimento prévio sobre óleos essenciais?',
-      answer: 'Não é necessário. Vou te guiar em todo o processo de escolha e utilização.'
+      question: 'Funciona online mesmo?',
+      answer: 'Sim! Já atendi mulheres de várias cidades. Basta um local calmo e conexão estável.'
     },
     {
-      question: 'Os óleos complementam outros tratamentos?',
-      answer: 'Sim, a aromaterapia atua como complemento terapêutico. Não recomendo a interrupção de nenhum tratamento médico em andamento.'
+      question: 'O que é o Método LIVRE?',
+      answer: 'É o meu método exclusivo que une Terapia de Alta Performance Mental (PNL e Neurociência) e Aromaterapia (prática integrativa que utiliza óleos essenciais a nível físico, mental e emocional). Essa combinação permite um destrave emocional estruturado, trabalhando tanto a mente quanto as emoções de forma integrada para resultados mais profundos e duradouros.'
     }
   ];
 

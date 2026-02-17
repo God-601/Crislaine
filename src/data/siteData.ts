@@ -1,113 +1,111 @@
 export const site = {
     hero: {
-        title: 'TESTE GRATUITO DE IDENTIFICAÇÃO DE TRAVAS MENTAIS',
-        subtitle: 'Descubra quais padrões mentais e emocionais estão mantendo a ansiedade ativa na sua vida. Um processo de autoconhecimento com clareza e acompanhamento personalizado para você entender o que realmente está te travando.',
-        ctaText: 'Quero fazer o teste gratuito',
+        title: 'MAPEAMENTO DE TRAVAS MENTAIS',
+        subtitle: 'Sessão inicial sem custo (40 minutos) - Identifique o que realmente mantém sua ansiedade ativa',
+        ctaText: 'Quero agendar minha sessão sem custo',
         waNumber: '5579999663270',
-        waMessage: 'Oi, seja bem-vinda\n\nQue bom te ver por aqui.\n\nO Teste de Identificação de Travas Mentais é gratuito e acontece em sessão online, onde eu explico o resultado com clareza e cuidado.\n\nO primeiro passo é agendarmos sua sessão.\n\nMe conta, por favor:\nqual o melhor horário para você, tarde ou noite?'
+        waMessage: 'Oi, seja bem-vinda\n\nQue bom te ver por aqui.\n\nO Mapeamento de Travas Mentais é gratuito e acontece em sessão online, onde eu explico o resultado com clareza e cuidado.\n\nO primeiro passo é agendarmos sua sessão.\n\nMe conta, por favor:\nqual o melhor horário para você, tarde ou noite?'
     },
 
     identification: {
-        title: 'Você sente que a ansiedade te trava, mas não consegue identificar o porquê?',
+        title: 'Você se reconhece em alguma dessas situações?',
         paragraphs: [
-            'Você pode até dar conta da rotina, cumprir seus compromissos e seguir em frente. Mas por dentro sente que está sempre no limite, como se estivesse funcionando no automático, sem conseguir realmente descansar ou se sentir plena.',
-            'Talvez você se identifique com algumas dessas situações: pensa demais e descansa de menos, sente um cansaço emocional constante mesmo após dormir, tenta se controlar e se organizar, mas volta sempre para o mesmo padrão de ansiedade, percebe que poderia estar mais avançada na vida pessoal ou profissional, mas algo interno sempre trava seus avanços.',
-            'A ansiedade raramente é o problema em si. Na maioria das vezes, ela é um sinal de travas emocionais não identificadas que estão impactando tanto sua vida pessoal quanto profissional. Essas travas podem estar relacionadas a padrões de pensamento, crenças limitantes, experiências do passado não processadas ou formas de lidar com as emoções que não estão mais funcionando.'
+            'Você dá conta da rotina, resolve o que precisa, cumpre suas responsabilidades... Mas por dentro:',
+            'Talvez você se identifique com algumas dessas situações: Pensa demais e descansa de menos – a mente não desliga nem à noite. Sente um cansaço emocional constante – mesmo sem fazer "nada físico". Tenta se controlar, mas volta sempre ao mesmo padrão – parece que repete os mesmos ciclos. Percebe que poderia estar mais avançada, mas algo interno impede – como se tivesse um freio de mão puxado.',
+            'Se isso ressoa com você, siga lendo.',
+            'A ansiedade raramente é o problema em si. Na maioria das vezes, ela é um SINAL de travas emocionais não identificadas.',
+            'Travas mentais são como programas internos que: Foram criados em algum momento da sua história. Um dia podem ter te protegido. Mas hoje limitam seus resultados, sua paz e sua evolução.',
+            'E enquanto essas travas não são compreendidas, você continua tentando resolver na superfície algo que é estrutural.'
         ]
-    },
-
-    method: {
-        title: 'O teste funciona como um "exame de sangue da mente"',
+    }, Como funciona o Mapeamento?',
         paragraphs: [
+        'Etapa 1. Agendamento - Você escolhe o melhor horário pelo WhatsApp',
+        'Etapa 2. Teste estruturado - Recebe e responde um formulário com calma (10-15 min)',
+        'Etapa 3. Minha análise prévia - Estudo seus resultados antes da nossa conversa',
+        'Etapa 4. Sessão online (40 min) - Apresento e explico cada indicador identificado',
+        'Importante deixar claro: Não substitui acompanhamento médico ou psicológico quando necessário. Não é teste genérico de internet – você não recebe apenas um resultado automático. Não é conversa motivacional – não vou simplesmente "levantar sua autoestima" por 40 minutos. É uma ferramenta estruturada de autoconhecimento emocional. Com análise individualizada feita por mim, baseada no seu contexto. Com devolutiva ao vivo para você realmente se entender
             'Eu costumo explicar de forma simples: Assim como um exame de sangue não trata, mas mostra o que está em desequilíbrio no seu organismo, o Teste de Identificação de Travas Mentais faz exatamente isso no campo emocional. Ele oferece um diagnóstico claro do que está acontecendo internamente, sem julgamentos ou generalizações.',
-            'O teste identifica padrões mentais e emocionais específicos ligados à sua ansiedade, mostra quais travas estão mais ativas neste momento da sua vida, revela como essas travas podem estar impedindo você de avançar tanto na vida pessoal quanto profissional, e traz clareza objetiva por onde começar o processo de transformação, eliminando achismos ou tentativas aleatórias que não levam a resultados duradouros.',
-            'Importante entender: O teste não trata e não diagnostica condições médicas ou psicológicas. Não é um teste genérico de internet que você responde sozinha. É uma ferramenta profissional de autoconhecimento emocional, cuidadosamente aplicada e interpretada por mim, dentro de uma sessão individual e personalizada, onde cada resposta é analisada no contexto da sua história e da sua realidade atual.'
+    'O teste identifica padrões mentais e emocionais específicos ligados à sua ansiedade, mostra quais travas estão mais ativas neste momento da sua vida, revela como essas travas podem estar impedindo você de avançar tanto na vida pessoal quanto profissional, e traz clareza objetiva por onde começar o processo de transformação, eliminando achismos ou tentativas aleatórias que não levam a resultados duradouros.',
+    'Importante entender: O teste não trata e não diagnostica condições médicas ou psicológicas. Não é um teste genérico de internet que você responde sozinha. É uma ferramenta profissional de autoconhecimento emocional, cuidadosamente aplicada e interpretada por mim, dentro de uma sessão individual e personalizada, onde cada resposta é analisada no contexto da sua história e da sua realidade atual.'
         ]
     },
 
-    process: {
-        title: 'Como funciona o teste gratuito (passo a passo)',
+process: {
+    title: 'O que você descobre na sessão',
         items: [
-            'Agendamento da sessão: Você clica no botão e agenda sua sessão comigo pelo WhatsApp. Escolhemos juntas um horário que funcione para você, respeitando seu ritmo e disponibilidade.',
-            'Envio do teste: Após o agendamento, eu envio o formulário completo para você responder com calma, no seu próprio tempo. Não há pressa ou pressão. O importante é que você responda com honestidade e reflexão.',
-            'Análise dos resultados: Eu analiso profundamente seus resultados antes da nossa conversa. Cada resposta é considerada no contexto do todo, identificando padrões, conexões e travas específicas que estão ativas na sua vida.',
-            'Sessão online individual: Na sessão, que acontece por videochamada, eu explico detalhadamente cada indicador do teste, quais travas estão mais ativas e por quê, como essas travas impactam diretamente sua ansiedade no dia a dia, e por onde começar o processo de destrave de forma prática e acessível.',
-            'Clareza emocional antes de qualquer decisão. Após a sessão, você sai com uma compreensão clara do que está acontecendo internamente, sem mais tentativas de adivinhar ou suposições sobre o que pode estar errado.'
+            'Quais travas mentais estão mais ativas neste momento',
+            'Como essas travas sustentam sua ansiedade',
+            'De que forma elas impactam sua vida pessoal e profissional',
+            'Por onde começar o trabalho de destrave emocional'
         ],
-        ctaText: 'Quero fazer o teste gratuito'
-    },
+            ctaText: 'Quero agendar minha sessão sem custo'
+},
 
-    afterTest: {
-        title: 'E depois do teste?',
-        intro: 'O principal objetivo dessa sessão é clareza emocional.',
-        items: [
-            'quais padrões mentais e emocionais estão mais ativos',
-            'como essas travas impactam suas emoções hoje',
-            'por que a ansiedade aparece da forma que aparece'
-        ],
-        paragraphs: [
-            'Esse momento não é sobre decidir nada. É sobre entender a si mesma com mais consciência.',
-            'Muitas mulheres relatam que só essa clareza já traz alívio, porque deixa de existir confusão interna.',
-            'Depois disso, cada pessoa segue no seu tempo, do jeito que fizer mais sentido para ela.'
-        ]
-    },
+afterTest: {
+    title: 'E depois da sessão, sou obrigada a continuar?',
+        intro: 'Não. Ao final, se houver alinhamento, explico como funciona o processo estruturado do Método LIVRE. O próximo passo só acontece se você sentir que faz sentido.',
+            items: [],
+                paragraphs: [
+                    'O que você descobre na sessão é fruto de uma análise profunda feita por mim, considerando cada detalhe que você compartilhou. Não recebe apenas um resultado automático, mas uma devolutiva personalizada e cuidadosa.',
+                    'Muitas mulheres relatam que só essa clareza já traz alívio, porque deixa de existir confusão interna e elas conseguem entender a si mesmas com mais consciência.',
+                    'Depois disso, cada pessoa segue no seu tempo, do jeito que fizer mais sentido para ela. Há opções de continuar trabalhando comigo de forma estruturada, através do Método LIVRE, ou você pode simplesmente absorver o aprendizado e seguir sua vida com essa nova clareza.'
+                ]
+},
 
-    forWho: {
-        title: 'Para quem é esse teste',
+forWho: {
+    title: 'Para quem é este mapeamento',
         for: [
-            'Mulheres que sentem ansiedade recorrente e percebem que isso está impactando negativamente sua qualidade de vida',
-            'Mulheres que querem se entender emocionalmente de forma profunda, não apenas superficialmente',
-            'Mulheres que percebem que algo interno está impedindo seus avanços, mesmo quando fazem esforços para mudar',
-            'Mulheres que buscam clareza antes de tomar qualquer decisão sobre investir em terapia ou processos de transformação',
-            'Mulheres que valorizam um processo respeitoso, sem pressão e focado em autoconhecimento real'
-        ],
-        notFor: 'Não é para quem busca soluções rápidas, mágicas ou fórmulas prontas. O teste requer honestidade consigo mesma e abertura para olhar para dentro, o que pode ser desconfortável mas é necessário para transformação real.'
-    },
-
-    testimonials: [
-        {
-            type: 'text',
-            quote: 'Me senti acolhida e consegui entender coisas sobre mim que antes estavam confusas. O teste me deu uma visão clara do que estava me travando e por que eu reagia de certas formas. Foi um momento de muito autoconhecimento.',
-        },
-        {
-            type: 'text',
-            quote: 'Foi a primeira vez que alguém me explicou com clareza o que eu sentia, sem julgamento. A Crislaine foi muito respeitosa e paciente, e eu saí da sessão entendendo coisas sobre mim que eu não conseguia nomear antes.',
-        },
-        {
-            type: 'text',
-            quote: 'Não foi algo superficial. Me ajudou a olhar para mim com mais consciência e entender padrões que eu repetia sem perceber. O teste foi o ponto de partida para uma jornada de transformação que eu precisava há muito tempo.',
-        },
+        'Sente ansiedade recorrente e quer entender a origem',
+        'Percebe que algo interno está impedindo seus avanços',
+        'Já tentou várias coisas, mas nada parece resolver a raiz',
+        'Está disposta a assumir responsabilidade pelo seu processo',
+        'Quer clareza real, não apenas alívio momentâneo'
     ],
+        notFor: 'Não é para quem busca solução mágica em uma única sessão. Não é para quem está apenas curiosa, sem real disposição para mudança. Não é para quem precisa de diagnóstico ou tratamento psiquiátrico (neste caso, procure um médico). Não é para quem quer apenas desabafar sem compromisso com o processo.'
+},
+
+testimonials: [
+    {
+        type: 'text',
+        quote: 'Consegui entender coisas sobre mim que antes estavam confusas. Não foi superficial.',
+    },
+    {
+        type: 'text',
+        quote: 'Foi a primeira vez que alguém explicou o que eu sentia com clareza. Saí da sessão com um norte.',
+    },
+    {
+        type: 'text',
+        quote: 'Descobri travas que me acompanhavam há anos e eu nem sabia. Agora sei por onde começar.',
+    },
+],
 
     contact: {
-        finalTitle: 'Você não precisa continuar tentando adivinhar o que está acontecendo com você.',
-        finalText: 'Comece pela clareza. O primeiro passo para qualquer transformação real é entender o que realmente está acontecendo. Sem clareza, você continua tentando soluções aleatórias que não funcionam. Com clareza, você sabe exatamente por onde começar e o que precisa ser trabalhado.',
-        ctaText: 'Quero fazer o teste gratuito',
-        waNumber: '5579999663270',
-        waMessage: 'Oi, seja bem-vinda\n\nQue bom te ver por aqui.\n\nO Teste de Identificação de Travas Mentais é gratuito e acontece em sessão online, onde eu explico o resultado com clareza e cuidado.\n\nO primeiro passo é agendarmos sua sessão.\n\nMe conta, por favor:\nqual o melhor horário para você, tarde ou noite?',
-        phone: '+55 79 99966-3270',
-        email: 'crislainedpj@gmail.com',
-        instagram: 'https://www.instagram.com/crislaine.terapeuta?igsh=MTJlYTl1ZjU3MjJ6YQ=='
-    },
+    finalTitle: 'Pronta para entender o que realmente te trava?',
+        finalText: 'Você não precisa continuar tentando adivinhar o que está acontecendo com você. Ansiedade não se vence na força. Ela se compreende na raiz.',
+            ctaText: 'Quero agendar minha sessão sem custo',
+                waNumber: '5579999663270',
+                    waMessage: 'Oi, seja bem-vinda\n\nQue bom te ver por aqui.\n\nO Mapeamento de Travas Mentais é gratuito e acontece em sessão online, onde eu explico o resultado com clareza e cuidado.\n\nO primeiro passo é agendarmos sua sessão.\n\nMe conta, por favor:\nqual o melhor horário para você, tarde ou noite?',
+                        email: 'crislainedpj@gmail.com',
+                            instagram: 'https://www.instagram.com/crislaine.terapeuta?igsh=MTJlYTl1ZjU3MjJ6YQ=='
+},
 
-    footer: {
-        name: 'Crislaine de Carvalho — Terapeuta Integrativa',
-        subtitle: 'Teste de Identificação de Travas Mentais para mulheres com ansiedade.',
-        location: 'Atendimento 100% online'
-    },
+footer: {
+    name: 'Crislaine de Carvalho - Terapeuta Integrativa - Terapia de Alta Performance Mental',
+        subtitle: 'Pós-graduanda em Neurociência e Práticas Terapêuticas - Criadora do Método LIVRE',
+},
 
-    header: {
-        nav: [
-            { href: '#como-funciona', label: 'Como Funciona' },
-            { href: '#para-quem', label: 'Para Quem' },
-            { href: '#sobre', label: 'Sobre Mim' },
-        ]
-    },
+header: {
+    nav: [
+        { href: '#como-funciona', label: 'Como Funciona' },
+        { href: '#para-quem', label: 'Para Quem' },
+        { href: '#sobre', label: 'Sobre Mim' },
+    ]
+},
 
-    about: {
-        name: 'Crislaine de Carvalho',
-        bioShort: 'Também já vivi o cansaço emocional e a sensação de estar sempre funcionando no automático. Por muito tempo, tentei apenas suportar o que sentia, sem entender o que estava por trás das minhas emoções. Tudo começou a mudar quando parei de perguntar "como faço para aguentar?" E comecei a perguntar "o que dentro de mim precisa ser destravado?". Hoje, acompanho mulheres que desejam se entender melhor, com clareza, respeito e responsabilidade emocional.'
-    }
+about: {
+    name: 'Crislaine de Carvalho',
+        bioShort: 'Terapeuta Integrativa - Terapia de Alta Performance Mental, Ansiedade e Aromaterapia - Pós-graduanda em Neurociência e Práticas Terapêuticas - Criadora do Método LIVRE\n\nTambém já vivi o cansaço emocional e a sensação de estar sempre funcionando no automático. Por muito tempo, tentei apenas suportar o que sentia, sem entender o que estava por trás.\n\nTudo começou a mudar quando deixei de perguntar: "Como faço para aguentar?" e passei a perguntar: "O que dentro de mim precisa ser reorganizado?"\n\nHoje acompanho mulheres que desejam clareza emocional com responsabilidade, método e estrutura, unindo minha formação em Neurociência às práticas integrativas para um trabalho profundo e transformador.'
+}
 };
 
 export const whatsappLink = (message?: string, number?: string) => {
