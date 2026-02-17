@@ -19,7 +19,7 @@ export const site = {
         ]
     },
 
-    understanding: {
+    method: {
         title: 'A ansiedade raramente é o problema em si',
         paragraphs: [
             'Na maioria das vezes, ela é um SINAL de travas emocionais não identificadas.',
@@ -27,7 +27,8 @@ export const site = {
             'Foram criados em algum momento da sua história',
             'Um dia podem ter te protegido',
             'Mas hoje limitam seus resultados, sua paz e sua evolução',
-            'E enquanto essas travas não são compreendidas, você continua tentando resolver na superfície algo que é estrutural.'
+            'E enquanto essas travas não são compreendidas, você continua tentando resolver na superfície algo que é estrutural.',
+            'Importante entender: O teste não trata e não diagnostica condições médicas ou psicológicas. Não é um teste genérico de internet que você responde sozinha. É uma ferramenta profissional de autoconhecimento emocional, cuidadosamente aplicada e interpretada por mim, dentro de uma sessão individual e personalizada, onde cada resposta é analisada no contexto da sua história e da sua realidade atual.'
         ]
     },
 
@@ -63,16 +64,6 @@ export const site = {
         ]
     },
 
-    testBenefits: {
-        title: 'O que o teste identifica:',
-        paragraphs: [
-            'Padrões mentais e emocionais específicos ligados à sua ansiedade',
-            'Quais travas estão mais ativas neste momento da sua vida',
-            'Como essas travas podem estar impedindo você de avançar tanto na vida pessoal quanto profissional',
-            'Clareza objetiva por onde começar o processo de transformação, eliminando achismos ou tentativas aleatórias que não levam a resultados duradouros'
-        ]
-    },
-
     process: {
         title: 'O que você descobre na sessão',
         items: [
@@ -87,6 +78,7 @@ export const site = {
     afterTest: {
         title: 'E depois da sessão, sou obrigada a continuar?',
         intro: 'Não. Ao final, se houver alinhamento, explico como funciona o processo estruturado do Método LIVRE. O próximo passo só acontece se você sentir que faz sentido.',
+        items: [],
         paragraphs: [
             'O que você descobre na sessão é fruto de uma análise profunda feita por mim, considerando cada detalhe que você compartilhou. Não recebe apenas um resultado automático, mas uma devolutiva personalizada e cuidadosa.',
             'Muitas mulheres relatam que só essa clareza já traz alívio, porque deixa de existir confusão interna e elas conseguem entender a si mesmas com mais consciência.',
@@ -181,6 +173,7 @@ export const site = {
         subtitle: 'Terapia de Alta Performance Mental, Ansiedade e Aromaterapia',
         qualification: 'Pós-graduanda em Neurociência e Práticas Terapêuticas',
         method: 'Criadora do Método LIVRE',
+        bioShort: 'Terapeuta Integrativa - Terapia de Alta Performance Mental, Ansiedade e Aromaterapia - Pós-graduanda em Neurociência e Práticas Terapêuticas - Criadora do Método LIVRE\n\nTambém já vivi o cansaço emocional e a sensação de estar sempre funcionando no automático. Por muito tempo, tentei apenas suportar o que sentia, sem entender o que estava por trás.\n\nTudo começou a mudar quando deixei de perguntar: "Como faço para aguentar?" e passei a perguntar: "O que dentro de mim precisa ser reorganizado?"\n\nHoje acompanho mulheres que desejam clareza emocional com responsabilidade, método e estrutura, unindo minha formação em Neurociência às práticas integrativas para um trabalho profundo e transformador.',
         bio: [
             'Também já vivi o cansaço emocional e a sensação de estar sempre funcionando no automático.',
             'Por muito tempo, tentei apenas suportar o que sentia, sem entender o que estava por trás.',
