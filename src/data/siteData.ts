@@ -22,13 +22,7 @@ export const site = {
     method: {
         title: '🧠 A ansiedade raramente é o problema em si',
         paragraphs: [
-            'Na maioria das vezes, ela é um SINAL de travas emocionais não identificadas.',
-            'Travas mentais são como programas internos que:',
-            'Foram criados em algum momento da sua história',
-            'Um dia podem ter te protegido',
-            'Mas hoje limitam seus resultados, sua paz e sua evolução',
-            'E enquanto essas travas não são compreendidas, você continua tentando resolver na superfície algo que é estrutural.',
-            'Importante entender: O teste não trata e não diagnostica condições médicas ou psicológicas. Não é um teste genérico de internet que você responde sozinha. É uma ferramenta profissional de autoconhecimento emocional, cuidadosamente aplicada e interpretada por mim, dentro de uma sessão individual e personalizada, onde cada resposta é analisada no contexto da sua história e da sua realidade atual.'
+            'Na maioria das vezes, ela é um SINAL de travas emocionais não identificadas.\n\nTravas mentais são como programas internos que:\n\nForam criados em algum momento da sua história\n\nUm dia podem ter te protegido\n\nMas hoje limitam seus resultados, sua paz e sua evolução\n\nE enquanto essas travas não são compreendidas, você continua tentando resolver na superfície algo que é estrutural.\n\nImportante entender: O teste não trata e não diagnostica condições médicas ou psicológicas. Não é um teste genérico de internet que você responde sozinha. É uma ferramenta profissional de autoconhecimento emocional, cuidadosamente aplicada e interpretada por mim, dentro de uma sessão individual e personalizada, onde cada resposta é analisada no contexto da sua história e da sua realidade atual.'
         ]
     },
 
@@ -59,8 +53,7 @@ export const site = {
     comparison: {
         title: '🔬 Uma analogia simples:',
         paragraphs: [
-            'Assim como um exame de sangue não trata, mas mostra o que está em desequilíbrio no seu organismo, o Teste de Identificação de Travas Mentais faz exatamente isso no campo emocional.',
-            'Ele oferece um diagnóstico claro do que está acontecendo internamente, sem julgamentos ou generalizações.'
+            'Assim como um exame de sangue não trata, mas mostra o que está em desequilíbrio no seu organismo, o Teste de Identificação de Travas Mentais faz exatamente isso no campo emocional.\n\nEle oferece um diagnóstico claro do que está acontecendo internamente, sem julgamentos ou generalizações.'
         ]
     },
 
@@ -77,12 +70,12 @@ export const site = {
 
     afterTest: {
         title: 'E depois da sessão, sou obrigada a continuar?',
-        intro: 'Não. Ao final, se houver alinhamento, explico como funciona o processo estruturado do Método LIVRE. O próximo passo só acontece se você sentir que faz sentido.',
+        intro: 'Não. Ao final, se houver alinhamento, explico como funciona o processo estruturado do Método LIVRE.\n\nO próximo passo só acontece se você sentir que faz sentido.',
         items: [],
         paragraphs: [
-            'O que você descobre na sessão é fruto de uma análise profunda feita por mim, considerando cada detalhe que você compartilhou. Não recebe apenas um resultado automático, mas uma devolutiva personalizada e cuidadosa.',
+            'O que você descobre na sessão é fruto de uma análise profunda feita por mim, considerando cada detalhe que você compartilhou.\n\nNão recebe apenas um resultado automático, mas uma devolutiva personalizada e cuidadosa.',
             'Muitas mulheres relatam que só essa clareza já traz alívio, porque deixa de existir confusão interna e elas conseguem entender a si mesmas com mais consciência.',
-            'Depois disso, cada pessoa segue no seu tempo, do jeito que fizer mais sentido para ela. Há opções de continuar trabalhando comigo de forma estruturada, através do Método LIVRE, ou você pode simplesmente absorver o aprendizado e seguir sua vida com essa nova clareza.'
+            'Depois disso, cada pessoa segue no seu tempo, do jeito que fizer mais sentido para ela.\n\nHá opções de continuar trabalhando comigo de forma estruturada, através do Método LIVRE, ou você pode simplesmente absorver o aprendizado e seguir sua vida com essa nova clareza.'
         ]
     },
 
@@ -140,24 +133,24 @@ export const site = {
         },
         {
             question: '❓ O que é o Método LIVRE?',
-            answer: 'É o meu método exclusivo que une Terapia de Alta Performance Mental (PNL e Neurociência) e Aromaterapia (prática integrativa que utiliza óleos essenciais a nível físico, mental e emocional). Essa combinação permite um destrave emocional estruturado, trabalhando tanto a mente quanto as emoções de forma integrada para resultados mais profundos e duradouros.'
+            answer: 'É o meu método exclusivo que une:\n\n🧠 Terapia de Alta Performance Mental (PNL e Neurociência)\n\n🌿 Aromaterapia (prática integrativa que utiliza óleos essenciais a nível físico, mental e emocional)\n\nEssa combinação permite um destrave emocional estruturado, trabalhando tanto a mente quanto as emoções de forma integrada para resultados mais profundos e duradouros.'
         }
     ],
 
     contact: {
         finalTitle: '🚀 Pronta para entender o que realmente te trava?',
-        finalText: 'Você não precisa continuar tentando adivinhar o que está acontecendo com você. Ansiedade não se vence na força. Ela se compreende na raiz.',
+        finalText: 'Você não precisa continuar tentando adivinhar o que está acontecendo com você.\n\nAnsiedade não se vence na força.\nEla se compreende na raiz.',
         ctaText: 'Quero agendar minha sessão sem custo',
         waNumber: '5579999663270',
-        waMessage: 'Oi, seja bem-vinda\n\nQue bom te ver por aqui.\n\nO Mapeamento de Travas Mentais é gratuito e acontece em sessão online, onde eu explico o resultado com clareza e cuidado.\n\nO primeiro passo é agendarmos sua sessão.\n\nMe conta, por favor:\nqual o melhor horário para você, tarde ou noite?',
+        waMessage: 'Oi, seja bem-vinda\n\nQue bom te ver por aqui.\n\nO Mapeamento de Travas Mentais é gratuito e acontece em sessão online, onde eu explico o resultado com clareza e cuidado.\n\nO primeiro passo é agendarmos sua sessão.\n\nMe conta, por favor:\n\nQual o melhor horário para você, tarde ou noite?',
         email: '📧 crislainedpj@gmail.com',
         whatsapp: '📱 +55 79 99966-3270',
         instagram: 'https://www.instagram.com/crislaine.terapeuta?igsh=MTJlYTl1ZjU3MjJ6YQ=='
     },
 
     footer: {
-        name: '📢 Crislaine de Carvalho - Terapeuta Integrativa - Terapia de Alta Performance Mental',
-        subtitle: 'Pós-graduanda em Neurociência e Práticas Terapêuticas - Criadora do Método LIVRE',
+        name: '📢 Crislaine de Carvalho\nTerapeuta Integrativa\nTerapia de Alta Performance Mental, Ansiedade e Aromaterapia\n\nPós-graduanda em Neurociência e Práticas Terapêuticas\nCriadora do Método LIVRE\n\nTambém já vivi o cansaço emocional e a sensação de estar sempre funcionando no automático.\n\nPor muito tempo, tentei apenas suportar o que sentia, sem entender o que estava por trás.\n\nTudo começou a mudar quando deixei de perguntar: "Como faço para aguentar?" e passei a perguntar: "O que dentro de mim precisa ser reorganizado?"\n\nHoje acompanho mulheres que desejam clareza emocional com responsabilidade, método e estrutura, unindo minha formação em Neurociência às práticas integrativas para um trabalho profundo e transformador.',
+        subtitle: '',
     },
 
     header: {
