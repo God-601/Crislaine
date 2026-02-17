@@ -192,7 +192,7 @@ const Testimonials = () => {
                     whileTap={{ scale: 0.8 }}
                     aria-label={`Ir para depoimento ${i + 1}`}
                     className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-all duration-300 ${i === index
-                      ? 'bg-green-600 w-6 sm:w-8'
+                      ? 'bg-black w-6 sm:w-8'
                       : 'bg-gray-300 hover:bg-gray-400'
                       }`}
                   />

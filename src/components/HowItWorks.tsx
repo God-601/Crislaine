@@ -39,7 +39,7 @@ const HowItWorks = () => {
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.1, ease: [0.16, 1, 0.3, 1] }}
                 whileHover={{ y: -4 }}
               >
-                <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-green-600 text-white flex items-center justify-center text-xs sm:text-sm font-semibold mr-3 sm:mr-4 mt-0.5">
+                <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-black text-white flex items-center justify-center text-xs sm:text-sm font-semibold mr-3 sm:mr-4 mt-0.5">
                   {index + 1}
                 </div>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed flex-1">{item}</p>
