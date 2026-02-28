@@ -28,7 +28,7 @@ const ContactSection = () => {
             {site.contact.finalTitle}
           </motion.h2>
           <motion.p
-            className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8 sm:mb-12 md:mb-16 px-4"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8 sm:mb-12 md:mb-16 px-4 whitespace-pre-line"
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}

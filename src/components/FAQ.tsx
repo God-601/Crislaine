@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { site } from '../data/siteData';
 
 const FAQ = () => {
   const [ref, inView] = useInView({
@@ -11,28 +12,7 @@ const FAQ = () => {
 
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const faqs = [
-    {
-      question: 'Preciso ter câmera ligada?',
-      answer: 'Sim. A conexão visual é importante para o trabalho, pois muitas informações são captadas pela linguagem não verbal. Mas fique tranquila, o ambiente é acolhedor e sem julgamentos.'
-    },
-    {
-      question: 'E depois da sessão, sou obrigada a continuar?',
-      answer: 'Não. Ao final, se houver alinhamento, explico como funciona o processo estruturado do Método LIVRE. O próximo passo só acontece se você sentir que faz sentido.'
-    },
-    {
-      question: 'Quanto custa o processo depois?',
-      answer: 'Os valores variam conforme o formato do pacote escolhido. Posso explicar ao final, sem pressão e com transparência.'
-    },
-    {
-      question: 'Funciona online mesmo?',
-      answer: 'Sim! Já atendi mulheres de várias cidades. Basta um local calmo e conexão estável.'
-    },
-    {
-      question: 'O que é o Método LIVRE?',
-      answer: 'É o meu método exclusivo que une Terapia de Alta Performance Mental (PNL e Neurociência) e Aromaterapia (prática integrativa que utiliza óleos essenciais a nível físico, mental e emocional). Essa combinação permite um destrave emocional estruturado, trabalhando tanto a mente quanto as emoções de forma integrada para resultados mais profundos e duradouros.'
-    }
-  ];
+  const faqs = site.faq;
 
   const toggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -81,7 +61,7 @@ const FAQ = () => {
                     }`}
                 >
                   <div className="px-4 sm:px-6 md:px-8 pb-4 sm:pb-6 md:pb-8 pt-0 border-t border-gray-100">
-                    <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed pt-4">{faq.answer}</p>
+                    <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed pt-4 whitespace-pre-line">{faq.answer}</p>
                   </div>
                 </div>
               </motion.div>

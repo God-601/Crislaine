@@ -35,7 +35,7 @@ const AboutTherapist = () => {
                 transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
               >
                 <div className="space-y-5 sm:space-y-6">
-                  <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed whitespace-pre-line">
                     {site.about.bioShort}
                   </p>
                 </div>

@@ -30,7 +30,7 @@ const AfterTest = () => {
 
           <div className="space-y-6 sm:space-y-8 px-4">
             <motion.p
-              className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed text-center font-medium"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed text-center font-medium whitespace-pre-line"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -61,7 +61,7 @@ const AfterTest = () => {
               {site.afterTest.paragraphs.map((p, i) => (
                 <motion.p
                   key={i}
-                  className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed text-center"
+                  className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed text-center whitespace-pre-line"
                   initial={{ opacity: 0, y: 20 }}
                   animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.8, delay: 0.5 + i * 0.1, ease: [0.16, 1, 0.3, 1] }}

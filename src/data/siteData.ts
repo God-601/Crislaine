@@ -4,7 +4,7 @@ export const site = {
         subtitle: 'Sessão inicial sem custo (40 minutos) - Identifique o que realmente mantém sua ansiedade ativa',
         ctaText: 'Quero agendar minha sessão sem custo',
         waNumber: '5579999663270',
-        waMessage: 'Oi, seja bem-vinda\n\nQue bom te ver por aqui.\n\nO Mapeamento de Travas Mentais é gratuito e acontece em sessão online, onde eu explico o resultado com clareza e cuidado.\n\nO primeiro passo é agendarmos sua sessão.\n\nMe conta, por favor:\nqual o melhor horário para você, tarde ou noite?'
+        waMessage: 'Oi, seja bem-vinda\n Que bom te ver por aqui.\n O Mapeamento de Travas Mentais é gratuito e acontece em sessão online, onde eu explico o resultado com clareza e cuidado.\n O primeiro passo é agendarmos sua sessão.\n\nMe conta, por favor:\nqual o melhor horário para você, tarde ou noite?'
     },
 
     identification: {
@@ -22,7 +22,7 @@ export const site = {
     method: {
         title: '🧠 A ansiedade raramente é o problema em si',
         paragraphs: [
-            'Na maioria das vezes, ela é um SINAL de travas emocionais não identificadas.\n\nTravas mentais são como programas internos que:\n\nForam criados em algum momento da sua história\n\nUm dia podem ter te protegido\n\nMas hoje limitam seus resultados, sua paz e sua evolução\n\nE enquanto essas travas não são compreendidas, você continua tentando resolver na superfície algo que é estrutural.\n\nImportante entender: O teste não trata e não diagnostica condições médicas ou psicológicas. Não é um teste genérico de internet que você responde sozinha. É uma ferramenta profissional de autoconhecimento emocional, cuidadosamente aplicada e interpretada por mim, dentro de uma sessão individual e personalizada, onde cada resposta é analisada no contexto da sua história e da sua realidade atual.'
+            'Na maioria das vezes, ela é um SINAL de travas emocionais não identificadas.\n Travas mentais são como programas internos que:\n Foram criados em algum momento da sua história\n\nUm dia podem ter te protegido\n\nMas hoje limitam seus resultados, sua paz e sua evolução\n\nE enquanto essas travas não são compreendidas, você continua tentando resolver na superfície algo que é estrutural.\n\nImportante entender: O teste não trata e não diagnostica condições médicas ou psicológicas. Não é um teste genérico de internet que você responde sozinha. É uma ferramenta profissional de autoconhecimento emocional, cuidadosamente aplicada e interpretada por mim, dentro de uma sessão individual e personalizada, onde cada resposta é analisada no contexto da sua história e da sua realidade atual.'
         ]
     },
 
