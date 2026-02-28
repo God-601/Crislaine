@@ -11,10 +11,10 @@ export const site = {
         title: 'Você se reconhece em alguma dessas situações?',
         paragraphs: [
             'Você dá conta da rotina, resolve o que precisa, cumpre suas responsabilidades... Mas por dentro:',
-            '💭 Pensa demais e descansa de menos – a mente não desliga nem à noite',
-            '🪫 Sente um cansaço emocional constante – mesmo sem fazer "nada físico"',
-            '🔄 Tenta se controlar, mas volta sempre ao mesmo padrão – parece que repete os mesmos ciclos',
-            '🚧 Percebe que poderia estar mais avançada, mas algo interno impede – como se tivesse um freio de mão puxado',
+            'Pensa demais e descansa de menos – a mente não desliga nem à noite',
+            'Sente um cansaço emocional constante – mesmo sem fazer "nada físico"',
+            'Tenta se controlar, mas volta sempre ao mesmo padrão – parece que repete os mesmos ciclos',
+            'Percebe que poderia estar mais avançada, mas algo interno impede – como se tivesse um freio de mão puxado',
             'Se isso ressoa com você, siga lendo.'
         ]
     },
@@ -82,17 +82,17 @@ export const site = {
     forWho: {
         title: '🎯 Para quem é este mapeamento',
         for: [
-            '✔️ Sente ansiedade recorrente e quer entender a origem',
-            '✔️ Percebe que algo interno está impedindo seus avanços',
-            '✔️ Já tentou várias coisas, mas nada parece resolver a raiz',
-            '✔️ Está disposta a assumir responsabilidade pelo seu processo',
-            '✔️ Quer clareza real, não apenas alívio momentâneo'
+            ' Sente ansiedade recorrente e quer entender a origem',
+            ' Percebe que algo interno está impedindo seus avanços',
+            ' Já tentou várias coisas, mas nada parece resolver a raiz',
+            ' Está disposta a assumir responsabilidade pelo seu processo',
+            ' Quer clareza real, não apenas alívio momentâneo'
         ],
         notFor: [
-            '✖️ Busca solução mágica em uma única sessão',
-            '✖️ Está apenas curiosa, sem real disposição para mudança',
-            '✖️ Precisa de diagnóstico ou tratamento psiquiátrico (neste caso, procure um médico)',
-            '✖️ Quer apenas desabafar sem compromisso com o processo'
+            ' Busca solução mágica em uma única sessão',
+            ' Está apenas curiosa, sem real disposição para mudança',
+            ' Precisa de diagnóstico ou tratamento psiquiátrico (neste caso, procure um médico)',
+            ' Quer apenas desabafar sem compromisso com o processo'
         ]
     },
 
@@ -113,7 +113,6 @@ export const site = {
             author: 'Juliana M.'
         },
     ],
-
     faq: [
         {
             question: '❓ Preciso ter câmera ligada?',
@@ -162,7 +161,7 @@ export const site = {
     },
 
     about: {
-        name: '👤 Crislaine de Carvalho',
+        name: ' Crislaine de Carvalho',
         title: 'Terapeuta Integrativa',
         subtitle: 'Terapia de Alta Performance Mental, Ansiedade e Aromaterapia',
         qualification: 'Pós-graduanda em Neurociência e Práticas Terapêuticas',

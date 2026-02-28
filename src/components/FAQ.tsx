@@ -61,7 +61,11 @@ const FAQ = () => {
                     }`}
                 >
                   <div className="px-4 sm:px-6 md:px-8 pb-4 sm:pb-6 md:pb-8 pt-0 border-t border-gray-100">
-                    <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed pt-4 whitespace-pre-line">{faq.answer}</p>
+                    <p
+                      className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed pt-4 whitespace-pre-line"
+                    >
+                      {faq.answer}
+                    </p>
                   </div>
                 </div>
               </motion.div>

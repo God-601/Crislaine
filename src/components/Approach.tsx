@@ -55,11 +55,11 @@ const Approach = () => {
               Desenvolvi um método que une o poder da Aromaterapia com as técnicas avançadas da Terapia de Alta Performance (TAP), Programação Neurolinguística e Neurociência do Comportamento
             </motion.p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-20">
             {approaches.map((item, index) => (
-              <motion.div 
-                key={index} 
+              <motion.div
+                key={index}
                 className="bg-gray-50 p-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 flex flex-col group"
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -74,7 +74,7 @@ const Approach = () => {
               </motion.div>
             ))}
           </div>
-          
+
           <motion.div
             className="bg-gray-50 p-8 md:p-12 lg:p-16 rounded-3xl"
             initial={{ opacity: 0, y: 20 }}

@@ -51,7 +51,19 @@ const ForWho = () => {
             transition={{ duration: 0.6, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <X className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600 flex-shrink-0 mt-0.5" />
-            <p className="text-sm sm:text-base md:text-lg text-gray-700 font-medium leading-relaxed">{site.forWho.notFor}</p>
+            <div className="w-full">
+              <p className="text-sm sm:text-base md:text-lg text-gray-700 font-medium leading-relaxed mb-3">
+                Não é para quem:
+              </p>
+              <ul className="space-y-2">
+                {site.forWho.notFor.map((item, index) => (
+                  <li key={index} className="flex items-start gap-3 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+                    <span className="text-black mt-1 flex-shrink-0">•</span>
+                    <span>{item.trim()}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </motion.div>
         </motion.div>
       </div>
